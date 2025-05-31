@@ -31,7 +31,7 @@
       {
         \sectionLabel "Thelonius Monk's 'Blue Monk'"
         {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "minor 2nd"
           d'8 \startGroup ef' \stopGroup e' f'~f'2 |
           g'8 af' a' bf'~ bf'2 |

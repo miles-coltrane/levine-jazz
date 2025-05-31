@@ -37,7 +37,7 @@
     \new Staff {
       \clef bass {
         {
-          \skip \f
+          \skip \ff
           <b, ds a>2.~ |
           <b, ds a>2. |
           <b, ds a>2.~ |

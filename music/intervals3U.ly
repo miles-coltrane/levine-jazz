@@ -31,7 +31,7 @@
       {
         \sectionLabel "Charlie Parker 'Confirmation'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \partial 8 c'8
           \bar "||"
           \once\override HorizontalBracketText.text = "minor 3rd"

@@ -31,7 +31,7 @@
       {
         \sectionLabel "Duke Jordan 'Jordu'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           r8
           \once\override HorizontalBracketText.text = "perfect 4th"
           g \startGroup c \stopGroup d ef f g ef \bar "||"

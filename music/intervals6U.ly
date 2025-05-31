@@ -31,7 +31,7 @@
       {
         \sectionLabel "Joe Henderson 'Isotope'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "tritone"
           \partial 8 c'8 \startGroup \bar "||"
           fs8 \stopGroup g4 c8 r8 c,4.

@@ -31,7 +31,7 @@
       {
         \sectionLabel "Dizzy Gillespie 'Groovin' High'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "minor 3rd"
           bf'8 \startGroup g8 \stopGroup r4 r2 |
           bf8 g8 r4 r2 |

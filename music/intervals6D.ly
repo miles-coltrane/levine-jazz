@@ -31,7 +31,7 @@
       {
         \sectionLabel "Duke Ellington 'Sophisticated Lady' 3rd bar of bridge"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           r8 d'4 b8 e4 b8 g'8~ |
           g8 e8 b'4 fs8 e'4 as,8 |
           \once\override HorizontalBracketText.text = "tritone"

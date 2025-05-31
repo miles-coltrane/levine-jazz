@@ -31,7 +31,7 @@
       {
         \sectionLabel "Cedar Walton's 'Bolivia'"
         {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "minor 2nd"
           \partial 4 ef''4 \startGroup \bar "||"
           d''2 \stopGroup bf'4. fs'8~ |

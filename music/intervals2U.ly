@@ -31,7 +31,7 @@
       {
         \sectionLabel "Miles Davis 'Four'"
         {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 2nd"
           \partial 4. bf'8 \startGroup c''8 \stopGroup d''8 \bar "||"
           r8 bf'8 c''8  d''8 r8 bf'8 c''8  d''8 |

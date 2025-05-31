@@ -31,7 +31,7 @@
       {
         \sectionLabel "Miles Davis 'Tune-Up'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 2nd"
           a'2. \startGroup g4 \stopGroup |
           ds2 e2 |

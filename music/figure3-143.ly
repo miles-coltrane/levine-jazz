@@ -35,7 +35,7 @@
     \new Staff {
       \clef bass {
         {
-          \skip \f
+          \skip \ff
           <c e gs bf>2. r4 |
           <cs es a b>1 |
           \bar "||"

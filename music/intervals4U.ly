@@ -31,7 +31,7 @@
       {
         \sectionLabel "Thelonius Monk 'Monk's Dream'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 3rd"
           \partial 4. c'8 \startGroup \tuplet 3/2 { e \stopGroup g a } \bar "||"
           b4 a8 c,8 g'8 c,4 e8 |

@@ -31,7 +31,7 @@
       {
         \sectionLabel "Wayne Shorter 'ESP'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "perfect 4th"
           c''4. \startGroup g8~ \stopGroup  g4. d8~ |
           d4. g8~ g4 c8 g8~ |

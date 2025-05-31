@@ -31,7 +31,7 @@
       {
         \sectionLabel "John Coltrane 'Giant Steps'"
         \relative {
-          \skip \f % spacer to set voice volume
+          \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 3rd"
           fs''2 \startGroup d \stopGroup |
           b2 g4. bf8~ |
