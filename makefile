@@ -4,7 +4,7 @@ INPUTS := $(wildcard music/*.ly)
 PNG_OUTPUTS := $(patsubst music/%.ly,output/%.cropped.png,$(INPUTS))
 MIDI_OUTPUTS:= $(patsubst music/%.ly,output/%.midi,$(INPUTS))
 
-LILYPOND_OPTS := -dresolution=600 --png
+LILYPOND_OPTS := -dresolution=300 --png
 
 list:
 	@echo $(INPUTS)
@@ -17,7 +17,7 @@ serve: all
 # Open a browser tab connected to the local web server.
 open:
 	open http://localhost:8000/
-output/index.html: contents.html | output
+output/index.html: contents.html png scripts/generate.py | output
 	./scripts/generate.py --dir=output --input=$< --output=$@
 output/%.png: music/%.ly | output
 	lilypond $(LILYPOND_OPTS) --output=output/ $<

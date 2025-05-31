@@ -18,7 +18,7 @@ FIGURE_RE = re.compile(r"""
        \s*
     }}$""", re.VERBOSE)
 
-SIZE = 25 # percent
+SIZE = 50 # percent
 
 def png_size(filename):
     with open(filename, 'rb') as f:
