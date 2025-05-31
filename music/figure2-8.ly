@@ -10,7 +10,6 @@
     \context {
       \Score
       \omit BarNumber
-      \override SpacingSpanner.spacing-increment = 4
     }
     indent = 0\mm
   }
@@ -20,26 +19,18 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
-      r\breve | c1:maj7
+      d1:min7 | r1 | r1
     }
     \new Staff {
       \key c \major
+      \numericTimeSignature
       \override Timing.TimeSignature.stencil = ##f
-      \time 8/4
       \clef treble
       \relative {
         \skip \f % spacer to set voice volume
-        \sectionLabel \markup \right-align { "C Ionian mode" }
-        % TODO: add boxes around 1/3/5/7
-        c'4-\markup { root }
-        d-\markup { 2nd }
-        e-\markup { 3rd }
-        f-\markup { 4th }
-        g-\markup { 5th }
-        a-\markup { 6th }
-        b-\markup { 7th }
-        c-\markup { octave } |
-        <c, e g b>1
+        <d' f a c>1 | % TODO: add interval annotation D->F : minor 3rd
+        <d f a c>1 | % TODO: add interval annotation D->A : perfect 5th
+        <d f a c>1 | % TODO: add interval annotation D->C : minor 7th
         \bar "||"
       }
     }

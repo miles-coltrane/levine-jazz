@@ -20,7 +20,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
-      r\breve | c1:maj7
+      r\breve | g1:7
     }
     \new Staff {
       \key c \major
@@ -29,17 +29,17 @@
       \clef treble
       \relative {
         \skip \f % spacer to set voice volume
-        \sectionLabel \markup \right-align { "C Ionian mode" }
+        \sectionLabel \markup \right-align { "G Mixolydian mode" }
         % TODO: add boxes around 1/3/5/7
-        c'4-\markup { root }
-        d-\markup { 2nd }
-        e-\markup { 3rd }
-        f-\markup { 4th }
-        g-\markup { 5th }
-        a-\markup { 6th }
-        b-\markup { 7th }
-        c-\markup { octave } |
-        <c, e g b>1
+        g'4-\markup { root }
+        a-\markup { 2nd }
+        b-\markup { 3rd }
+        c-\markup { 4th }
+        d-\markup { 5th }
+        e-\markup { 6th }
+        f-\markup { 7th }
+        g-\markup { octave } |
+        <g, b d f>1
         \bar "||"
       }
     }
