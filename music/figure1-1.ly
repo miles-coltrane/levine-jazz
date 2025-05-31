@@ -10,8 +10,8 @@
       \Score
       \omit BarNumber
     }
+    indent = 0\mm
   }
-  % TODO: align all 3 staves to same width
   \new Staff {
     \key c \major
     \override Timing.TimeSignature.stencil = ##f
