@@ -29,10 +29,7 @@
       \time 4/4
       \clef treble
       {
-        \sectionLabel \markup \left-column {
-          "descending minor 2nd"
-          "Cedar Walton's 'Bolivia'"
-        }
+        \sectionLabel "Cedar Walton's 'Bolivia'"
         {
           \skip \f % spacer to set voice volume
           \once\override HorizontalBracketText.text = "minor 2nd"

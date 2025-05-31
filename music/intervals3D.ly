@@ -29,10 +29,7 @@
       \time 4/4
       \clef treble
       {
-        \sectionLabel \markup \left-column {
-          "descending minor 3rd"
-          "Dizzy Gillespie 'Groovin' High'"
-        }
+        \sectionLabel "Dizzy Gillespie 'Groovin' High'"
         \relative {
           \skip \f % spacer to set voice volume
           \once\override HorizontalBracketText.text = "minor 3rd"

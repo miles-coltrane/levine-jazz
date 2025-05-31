@@ -29,10 +29,7 @@
       \time 4/4
       \clef treble
       {
-        \sectionLabel \markup \left-column {
-          "ascending minor 3rd"
-          "Charlie Parker 'Confirmation'"
-        }
+        \sectionLabel "Charlie Parker 'Confirmation'"
         \relative {
           \skip \f % spacer to set voice volume
           \partial 8 c'8

@@ -29,10 +29,7 @@
       \time 4/4
       \clef treble
       {
-        \sectionLabel \markup \left-column {
-          "ascending major 3rd"
-          "Thelonius Monk 'Monk's Dream'"
-        }
+        \sectionLabel "Thelonius Monk 'Monk's Dream'"
         \relative {
           \skip \f % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 3rd"

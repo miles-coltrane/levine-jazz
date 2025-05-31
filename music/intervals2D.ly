@@ -29,10 +29,7 @@
       \time 4/4
       \clef treble
       {
-        \sectionLabel \markup \left-column {
-          "descending major 2nd"
-          "Miles Davis 'Tune-Up'"
-        }
+        \sectionLabel "Miles Davis 'Tune-Up'"
         \relative {
           \skip \f % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 2nd"

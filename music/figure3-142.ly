@@ -20,7 +20,6 @@
       b1:aug7
     }
     \new Staff {
-      \sectionLabel "Figure 3-142"
       \key c \major
       \numericTimeSignature
       \time 3/4

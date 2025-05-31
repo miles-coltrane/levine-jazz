@@ -21,7 +21,6 @@
       cs1:aug7
     }
     \new Staff {
-      \sectionLabel "Figure 3-143"
       \key c \major
       \numericTimeSignature
       \time 4/4
