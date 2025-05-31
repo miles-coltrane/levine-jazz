@@ -1,4 +1,4 @@
-all: output/index.html png midi
+all: png midi output/index.html
 
 INPUTS := $(wildcard music/*.ly)
 PNG_OUTPUTS := $(patsubst music/%.ly,output/%.cropped.png,$(INPUTS))
@@ -17,7 +17,7 @@ serve: all
 # Open a browser tab connected to the local web server.
 open:
 	open http://localhost:8000/
-output/index.html: contents.html png scripts/generate.py | output
+output/index.html: contents.html scripts/generate.py | output
 	./scripts/generate.py --dir=output --input=$< --output=$@
 output/%.cropped.png: music/%.ly | output
 	lilypond $(LILYPOND_OPTS) --output=output/ $< && rm output/$(basename $(notdir $<)).png
