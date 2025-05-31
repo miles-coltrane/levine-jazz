@@ -19,12 +19,10 @@ open:
 	open http://localhost:8000/
 output/index.html: contents.html png scripts/generate.py | output
 	./scripts/generate.py --dir=output --input=$< --output=$@
-output/%.png: music/%.ly | output
-	lilypond $(LILYPOND_OPTS) --output=output/ $<
 output/%.cropped.png: music/%.ly | output
-	lilypond $(LILYPOND_OPTS) --output=output/ $<
+	lilypond $(LILYPOND_OPTS) --output=output/ $< && rm output/$(basename $(notdir $<)).png
 output/%.midi: music/%.ly | output
-	lilypond $(LILYPOND_OPTS) --output=output/ $<
+	lilypond $(LILYPOND_OPTS) --output=output/ $< && rm output/$(basename $(notdir $<)).png
 output:
 	mkdir -p $@
 clean: clean_html clean_png clean_midi
