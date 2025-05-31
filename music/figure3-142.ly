@@ -13,7 +13,7 @@
   }
   {
     <<
-    \chords{
+    \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp % to prevent named chords sounding

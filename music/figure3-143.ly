@@ -13,12 +13,11 @@
   }
   {
     <<
-    \chords{
+    \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp % to prevent named chords sounding
-      c1:aug7
-      cs1:aug7
+      c1:aug7 | cs1:aug7
     }
     \new Staff {
       \key c \major

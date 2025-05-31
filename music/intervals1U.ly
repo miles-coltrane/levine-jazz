@@ -21,7 +21,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp
-      bf1:7 ef1:7 bf1:7
+      bf1:7 | ef1:7 | bf1:7
     }
     \new Staff {
       \key bf \major

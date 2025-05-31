@@ -21,7 +21,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
-      ef1:maj7 r1 a1:min7
+      ef1:maj7 | r1 | a1:min7
     }
     \new Staff {
       \key ef \major

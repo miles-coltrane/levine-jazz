@@ -13,7 +13,7 @@
   }
   {
     <<
-    \chords{
+    \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
