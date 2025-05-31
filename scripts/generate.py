@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import getopt
 import re
+import struct
 import sys
 
 FIGURE_RE = re.compile(r"""
@@ -17,10 +18,17 @@ FIGURE_RE = re.compile(r"""
        \s*
     }}$""", re.VERBOSE)
 
-# TODO: figure out a fixed scaling so all staves are same size
-SIZE = 50 # percent
+SIZE = 25 # percent
 
-def transmute(infile, outfile):
+def png_size(filename):
+    with open(filename, 'rb') as f:
+        data = f.read()
+    if ((data[:8] != b'\x89PNG\r\n\x1a\n') or (data[12:16] != b'IHDR')):
+        raise Exception(f"can't parse PNG file {filename}: {data[:8]}")
+    w, h = struct.unpack('>LL', data[16:24])
+    return int(w), int(h)
+
+def transmute(infile, outfile, indir):
     for line in infile:
         line.strip()
         m = FIGURE_RE.match(line)
@@ -30,22 +38,32 @@ def transmute(infile, outfile):
             filename = m.group('filename')
             if not filename:
                 filename = fullname.lower().replace(" ", "")
+            png_filename  = f"./{filename}.cropped.png"
+            midi_filename  = f"./{filename}.midi"
+            if indir:
+                w, h = png_size(f"{indir}/{png_filename}")
+                style = f"width: {w*SIZE/100}px; height: {h*SIZE/100}px;"
+            else:
+                style = f"width: {SIZE}%; height: auto;"
             print(f"""<h4>{fullname}</h4>""",file=outfile)
-            print(f"""{prefix}<p><img src="./{filename}.cropped.png" name="{fullname}" style="width: {SIZE}%; height: auto;"/>""", file=outfile);
-            print(f"""{prefix}<p><midi-player src="./{filename}.midi" sound-font />""",file=outfile)
+            print(f"""{prefix}<p><img src="{png_filename}" name="{fullname}" style="{style}"/>""", file=outfile);
+            print(f"""{prefix}<p><midi-player src="{midi_filename}" sound-font />""",file=outfile)
             print(f"""{prefix}<hr/>""",file=outfile)
         else:
             print(f"{line}", file=outfile);
 
 def usage():
     print("generate [options] infile.lst")
-    print("  -o <file> / --output <file>  : output file")
+    print("  -i <file> / --input <file>  : input file")
+    print("  -o <file> / --output <file> : output file")
+    print("  -d <dir> / --dir <dir>      : directory holding images")
 
 def main(args):
     infile = sys.stdin
     outfile = sys.stdout
+    indir = None
     try:
-        opts, args = getopt.getopt(args, "oi:o:", ["help", "input=", "output="])
+        opts, args = getopt.getopt(args, "hi:o:d:", ["help", "input=", "output=", "dir="])
     except getopt.GetoptError as err:
         print(err)  # will print something like "option -a not recognized"
         usage()
@@ -58,9 +76,11 @@ def main(args):
             infile = open(a)
         elif o in ("-o", "--output"):
             outfile = open(a, "w")
+        elif o in ("-d", "--dir"):
+            indir = a
         else:
             assert False, "unhandled option"
-    transmute(infile, outfile)
+    transmute(infile, outfile, indir)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

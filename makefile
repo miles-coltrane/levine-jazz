@@ -18,7 +18,7 @@ serve: all
 open:
 	open http://localhost:8000/
 output/index.html: contents.html | output
-	./scripts/generate.py --input=$< --output=$@
+	./scripts/generate.py --dir=output --input=$< --output=$@
 output/%.png: music/%.ly | output
 	lilypond $(LILYPOND_OPTS) --output=output/ $<
 output/%.cropped.png: music/%.ly | output
