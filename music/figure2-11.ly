@@ -19,7 +19,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
-      % CHORDS HERE
+      g1:7 | r
     }
     \new Staff {
       \key c \major
@@ -28,7 +28,7 @@
       \clef treble
       \relative {
         \skip \fff % spacer to set voice volume
-        % NOTES HERE
+        r8 g' a b c d e f | g g, r4 r2
         \bar "||"
       }
     }
