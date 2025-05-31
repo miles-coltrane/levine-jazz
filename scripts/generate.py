@@ -45,10 +45,10 @@ def transmute(infile, outfile, indir):
                 style = f"width: {w*SIZE/100}px; height: {h*SIZE/100}px;"
             else:
                 style = f"width: {SIZE}%; height: auto;"
-            print(f"""<h4>{fullname}</h4>""",file=outfile)
+            print(f"""<details><summary>{fullname}</summary>""",file=outfile)
             print(f"""{prefix}<p><img src="{png_filename}" name="{fullname}" style="{style}"/>""", file=outfile);
             print(f"""{prefix}<p><midi-player src="{midi_filename}" sound-font />""",file=outfile)
-            print(f"""{prefix}<hr/>""",file=outfile)
+            print(f"""{prefix}</details>""",file=outfile)
         else:
             print(f"{line}", file=outfile);
 

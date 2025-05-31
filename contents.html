@@ -2,9 +2,23 @@
   <head>
     <title>The Jazz Theory Book by Mark Levine</title>
     <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+    <script>
+      const expandElements = shouldExpand => {
+        let detailsElements = document.querySelectorAll("details");
+        detailsElements = [...detailsElements];
+        if (shouldExpand) {
+          detailsElements.map(item => item.setAttribute("open", shouldExpand));
+        } else {
+          detailsElements.map(item => item.removeAttribute("open"));
+        }
+      };
+    </script>
   </head>
   <body>
     <h1>The Jazz Theory Book by Mark Levine</h1>
+
+    <button onClick="expandElements(true)">Expand all</button>
+    <button onClick="expandElements(false)">Collapse all</button>
 
     <h2>Chapter 1: Basic Theory</h2>
 
