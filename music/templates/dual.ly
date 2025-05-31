@@ -11,6 +11,7 @@
       \Score
       \omit BarNumber
     }
+    indent = 0\mm
   }
   {
     <<
@@ -21,7 +22,6 @@
       % CHORD NAMES HERE
     }
     \new Staff {
-      \sectionLabel "Figure X-Y"
       \key c \major
       \numericTimeSignature
       \time 4/4

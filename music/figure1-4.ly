@@ -11,27 +11,20 @@
       \Score
       \omit BarNumber
     }
-    indent = 0\mm
   }
   {
-    <<
-    \chords {
-      \set noChordSymbol = ""
-      \set minorChordModifier = \markup { "-" }
-      \skip \ppp % spacer to set voice volume
-      % CHORDS HERE
-    }
     \new Staff {
       \key c \major
-      \numericTimeSignature
-      \time 4/4
+      \override Timing.TimeSignature.stencil = ##f
       \clef treble
       {
+        \sectionLabel "perfect 4th"
         \skip \f % spacer to set voice volume
-        % NOTES HERE
+        < c' f' >1 |
+        \sectionLabel "perfect 5th"
+        < f' c'' >
         \bar "||"
       }
     }
-    >>
   }
 }
