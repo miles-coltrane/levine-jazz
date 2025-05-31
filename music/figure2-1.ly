@@ -19,7 +19,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp % to prevent named chords sounding
-      % CHORD NAMES HERE
+      r4 | f1:min7 | bf:7 | ef:maj7
     }
     \new Staff {
       \key c \major
@@ -28,7 +28,13 @@
       \clef treble {
         \relative {
           \skip \f % spacer to set voice volume
-          % TREBLE CLEF HERE
+          \partial 4 f'4 |
+          \tieUp <af, ef' g~>1 |
+          <<
+            { g'4 f4 f4 g4 }
+            \new Voice { \voiceTwo <c, d>1 }
+          >> |
+          <f, g bf> 1
           \bar "||"
         }
       }
@@ -37,7 +43,7 @@
       \clef bass {
         \relative {
           \skip \f % spacer to set voice volume
-          % BASS CLEF HERE
+          \partial 4 r4 | f,1 | <bf' af,> | ef,,
           \bar "||"
         }
       }
