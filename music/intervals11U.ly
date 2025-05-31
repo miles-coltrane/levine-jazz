@@ -1,6 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
+\include "include/alt.ly"
 \score {
   \midi {
     \tempo 4=140
@@ -21,7 +22,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
-      r4. | d1:min7.5- | g:7-.9-.10-.11+.13- % TODO: last chord is alt
+      r4. | d1:min7.5- | g:alt
     }
     \new Staff {
       \key ef \major

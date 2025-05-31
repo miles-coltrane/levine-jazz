@@ -1,6 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
+\include "include/alt.ly"
 \score {
   \midi {
     \tempo 4=140
@@ -21,7 +22,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
-      e1:7-.9-.10-.11+.13- | r1 | f1:maj7 % TODO: first chord is E7alt
+      e1:alt | r1 | f1:maj7
     }
     \new Staff {
       \key c \major

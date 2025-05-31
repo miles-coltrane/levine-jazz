@@ -1,6 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
+\include "include/alt.ly"
 \score {
   \midi {
     \tempo 4=140
