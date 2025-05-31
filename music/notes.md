@@ -1,4 +1,4 @@
-
+* duration is assumed same-as-previous if omitted
 * `*s` or `*-sharp` = sharp
 * `*f` or `*-flat` = flat
 * append number for duration, 8 => 1/8, 4 => 1/4 etc
