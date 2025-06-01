@@ -1,0 +1,292 @@
+<html>
+
+  <head>
+
+    <title>The Jazz Theory Book by Mark Levine</title>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
+    <script>
+
+      const expandElements = shouldExpand => {
+
+        let detailsElements = document.querySelectorAll("details");
+
+        detailsElements = [...detailsElements];
+
+        if (shouldExpand) {
+
+          detailsElements.map(item => item.setAttribute("open", shouldExpand));
+
+        } else {
+
+          detailsElements.map(item => item.removeAttribute("open"));
+
+        }
+
+      };
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <h1>The Jazz Theory Book by Mark Levine</h1>
+
+
+
+    <button onClick="expandElements(true)">Expand all</button>
+
+    <button onClick="expandElements(false)">Collapse all</button>
+
+
+
+    <h2>Chapter 1: Basic Theory</h2>
+
+
+
+<details><summary>Figure 1-1</summary>
+      <p><img src="./figure1-1.cropped.png" name="Figure 1-1" style="width: 1123.0px; height: 369.0px;"/>
+      <p><midi-player src="./figure1-1.midi" sound-font />
+      </details>
+      <h3>Table of Intervals</h3>
+
+<details><summary>Ascending minor 2nd</summary>
+      <p><img src="./intervals1U.cropped.png" name="Ascending minor 2nd" style="width: 702.0px; height: 154.0px;"/>
+      <p><midi-player src="./intervals1U.midi" sound-font />
+      </details>
+<details><summary>Descending minor 2nd</summary>
+      <p><img src="./intervals1D.cropped.png" name="Descending minor 2nd" style="width: 564.5px; height: 141.5px;"/>
+      <p><midi-player src="./intervals1D.midi" sound-font />
+      </details>
+<details><summary>Ascending major 2nd</summary>
+      <p><img src="./intervals2U.cropped.png" name="Ascending major 2nd" style="width: 641.5px; height: 135.5px;"/>
+      <p><midi-player src="./intervals2U.midi" sound-font />
+      </details>
+<details><summary>Descending major 2nd</summary>
+      <p><img src="./intervals2D.cropped.png" name="Descending major 2nd" style="width: 410.5px; height: 152.0px;"/>
+      <p><midi-player src="./intervals2D.midi" sound-font />
+      </details>
+<details><summary>Ascending minor 3rd</summary>
+      <p><img src="./intervals3U.cropped.png" name="Ascending minor 3rd" style="width: 785.5px; height: 146.0px;"/>
+      <p><midi-player src="./intervals3U.midi" sound-font />
+      </details>
+<details><summary>Descending minor 3rd</summary>
+      <p><img src="./intervals3D.cropped.png" name="Descending minor 3rd" style="width: 658.5px; height: 150.0px;"/>
+      <p><midi-player src="./intervals3D.midi" sound-font />
+      </details>
+<details><summary>Ascending major 3rd</summary>
+      <p><img src="./intervals4U.cropped.png" name="Ascending major 3rd" style="width: 675.0px; height: 156.5px;"/>
+      <p><midi-player src="./intervals4U.midi" sound-font />
+      </details>
+<details><summary>Descending major 3rd</summary>
+      <p><img src="./intervals4D.cropped.png" name="Descending major 3rd" style="width: 433.5px; height: 156.5px;"/>
+      <p><midi-player src="./intervals4D.midi" sound-font />
+      </details>
+<details><summary>Ascending perfect 4th</summary>
+      <p><img src="./intervals5U.cropped.png" name="Ascending perfect 4th" style="width: 714.5px; height: 154.0px;"/>
+      <p><midi-player src="./intervals5U.midi" sound-font />
+      </details>
+<details><summary>Descending perfect 4th</summary>
+      <p><img src="./intervals5D.cropped.png" name="Descending perfect 4th" style="width: 575.0px; height: 152.0px;"/>
+      <p><midi-player src="./intervals5D.midi" sound-font />
+      </details>
+<details><summary>Ascending tritone</summary>
+      <p><img src="./intervals6U.cropped.png" name="Ascending tritone" style="width: 316.5px; height: 148.0px;"/>
+      <p><midi-player src="./intervals6U.midi" sound-font />
+      </details>
+<details><summary>Descending tritone</summary>
+      <p><img src="./intervals6D.cropped.png" name="Descending tritone" style="width: 587.5px; height: 154.0px;"/>
+      <p><midi-player src="./intervals6D.midi" sound-font />
+      </details>
+<details><summary>Ascending perfect 5th</summary>
+      <p><img src="./intervals7U.cropped.png" name="Ascending perfect 5th" style="width: 644.0px; height: 150.0px;"/>
+      <p><midi-player src="./intervals7U.midi" sound-font />
+      </details>
+<details><summary>Descending perfect 5th</summary>
+      <p><img src="./intervals7D.cropped.png" name="Descending perfect 5th" style="width: 487.5px; height: 148.0px;"/>
+      <p><midi-player src="./intervals7D.midi" sound-font />
+      </details>
+<details><summary>Ascending minor 6th</summary>
+      <p><img src="./intervals8U.cropped.png" name="Ascending minor 6th" style="width: 485.5px; height: 152.0px;"/>
+      <p><midi-player src="./intervals8U.midi" sound-font />
+      </details>
+<details><summary>Descending minor 6th</summary>
+      <p><img src="./intervals8D.cropped.png" name="Descending minor 6th" style="width: 531.5px; height: 169.0px;"/>
+      <p><midi-player src="./intervals8D.midi" sound-font />
+      </details>
+<details><summary>Ascending major 6th</summary>
+      <p><img src="./intervals9U.cropped.png" name="Ascending major 6th" style="width: 798.0px; height: 179.0px;"/>
+      <p><midi-player src="./intervals9U.midi" sound-font />
+      </details>
+<details><summary>Descending major 6th</summary>
+      <p><img src="./intervals9D.cropped.png" name="Descending major 6th" style="width: 414.5px; height: 146.0px;"/>
+      <p><midi-player src="./intervals9D.midi" sound-font />
+      </details>
+<details><summary>Ascending minor 7th</summary>
+      <p><img src="./intervals10U.cropped.png" name="Ascending minor 7th" style="width: 625.0px; height: 175.0px;"/>
+      <p><midi-player src="./intervals10U.midi" sound-font />
+      </details>
+<details><summary>Descending minor 7th</summary>
+      <p><img src="./intervals10D.cropped.png" name="Descending minor 7th" style="width: 573.0px; height: 175.0px;"/>
+      <p><midi-player src="./intervals10D.midi" sound-font />
+      </details>
+<details><summary>Ascending major 7th</summary>
+      <p><img src="./intervals11U.cropped.png" name="Ascending major 7th" style="width: 537.5px; height: 169.0px;"/>
+      <p><midi-player src="./intervals11U.midi" sound-font />
+      </details>
+<details><summary>Descending major 7th</summary>
+      <p><img src="./intervals11D.cropped.png" name="Descending major 7th" style="width: 569.0px; height: 162.5px;"/>
+      <p><midi-player src="./intervals11D.midi" sound-font />
+      </details>
+<details><summary>Ascending octave</summary>
+      <p><img src="./intervals12U.cropped.png" name="Ascending octave" style="width: 506.5px; height: 137.5px;"/>
+      <p><midi-player src="./intervals12U.midi" sound-font />
+      </details>
+<details><summary>Descending octave</summary>
+      <p><img src="./intervals12D.cropped.png" name="Descending octave" style="width: 735.5px; height: 137.5px;"/>
+      <p><midi-player src="./intervals12D.midi" sound-font />
+      </details>
+<details><summary>Ascending minor 9th</summary>
+      <p><img src="./intervals13U.cropped.png" name="Ascending minor 9th" style="width: 712.5px; height: 166.5px;"/>
+      <p><midi-player src="./intervals13U.midi" sound-font />
+      </details>
+<details><summary>Descending minor 9th</summary>
+      <p><img src="./intervals13D.cropped.png" name="Descending minor 9th" style="width: 654.0px; height: 169.0px;"/>
+      <p><midi-player src="./intervals13D.midi" sound-font />
+      </details>
+<details><summary>Ascending major 9th</summary>
+      <p><img src="./intervals14U.cropped.png" name="Ascending major 9th" style="width: 510.5px; height: 137.5px;"/>
+      <p><midi-player src="./intervals14U.midi" sound-font />
+      </details>
+<details><summary>Ascending major 10th</summary>
+      <p><img src="./intervals16U.cropped.png" name="Ascending major 10th" style="width: 444.0px; height: 144.0px;"/>
+      <p><midi-player src="./intervals16U.midi" sound-font />
+      </details>
+<details><summary>Descending 11th</summary>
+      <p><img src="./intervals17D.cropped.png" name="Descending 11th" style="width: 566.5px; height: 171.0px;"/>
+      <p><midi-player src="./intervals17D.midi" sound-font />
+      </details>
+<details><summary>Descending major 13th</summary>
+      <p><img src="./intervals21D.cropped.png" name="Descending major 13th" style="width: 619.0px; height: 177.0px;"/>
+      <p><midi-player src="./intervals21D.midi" sound-font />
+      </details>
+<details><summary>Figure 1-2</summary>
+      <p><img src="./figure1-2.cropped.png" name="Figure 1-2" style="width: 231.5px; height: 100.0px;"/>
+      <p><midi-player src="./figure1-2.midi" sound-font />
+      </details>
+<details><summary>Figure 1-3</summary>
+      <p><img src="./figure1-3.cropped.png" name="Figure 1-3" style="width: 231.5px; height: 100.0px;"/>
+      <p><midi-player src="./figure1-3.midi" sound-font />
+      </details>
+<details><summary>Figure 1-4</summary>
+      <p><img src="./figure1-4.cropped.png" name="Figure 1-4" style="width: 244.0px; height: 100.0px;"/>
+      <p><midi-player src="./figure1-4.midi" sound-font />
+      </details>
+<details><summary>Figure 1-5</summary>
+      <p><img src="./figure1-5.cropped.png" name="Figure 1-5" style="width: 219.0px; height: 100.0px;"/>
+      <p><midi-player src="./figure1-5.midi" sound-font />
+      </details>
+<details><summary>Figure 1-6</summary>
+      <p><img src="./figure1-6.cropped.png" name="Figure 1-6" style="width: 521.0px; height: 125.0px;"/>
+      <p><midi-player src="./figure1-6.midi" sound-font />
+      </details>
+<details><summary>Figure 1-7</summary>
+      <p><img src="./figure1-7.cropped.png" name="Figure 1-7" style="width: 1123.0px; height: 196.0px;"/>
+      <p><midi-player src="./figure1-7.midi" sound-font />
+      </details>
+
+
+      <h2>Chapter 2: The Major Scale and the II-V-I Progression</h2>
+
+<details><summary>Figure 2-1</summary>
+      <p><img src="./figure2-1.cropped.png" name="Figure 2-1" style="width: 456.5px; height: 194.0px;"/>
+      <p><midi-player src="./figure2-1.midi" sound-font />
+      </details>
+<details><summary>Figure 2-2</summary>
+      <p><img src="./figure2-2.cropped.png" name="Figure 2-2" style="width: 496.0px; height: 212.5px;"/>
+      <p><midi-player src="./figure2-2.midi" sound-font />
+      </details>
+<details><summary>Figure 2-3</summary>
+      <p><img src="./figure2-3.cropped.png" name="Figure 2-3" style="width: 552.0px; height: 227.0px;"/>
+      <p><midi-player src="./figure2-3.midi" sound-font />
+      </details>
+<details><summary>Figure 2-4</summary>
+      <p><img src="./figure2-4.cropped.png" name="Figure 2-4" style="width: 1123.0px; height: 681.5px;"/>
+      <p><midi-player src="./figure2-4.midi" sound-font />
+      </details>
+<details><summary>Figure 2-5</summary>
+      <p><img src="./figure2-5.cropped.png" name="Figure 2-5" style="width: 819.0px; height: 121.0px;"/>
+      <p><midi-player src="./figure2-5.midi" sound-font />
+      </details>
+<details><summary>Figure 2-6</summary>
+      <p><img src="./figure2-6.cropped.png" name="Figure 2-6" style="width: 300.0px; height: 87.5px;"/>
+      <p><midi-player src="./figure2-6.midi" sound-font />
+      </details>
+<details><summary>Figure 2-7</summary>
+      <p><img src="./figure2-7.cropped.png" name="Figure 2-7" style="width: 819.0px; height: 116.5px;"/>
+      <p><midi-player src="./figure2-7.midi" sound-font />
+      </details>
+<details><summary>Figure 2-8</summary>
+      <p><img src="./figure2-8.cropped.png" name="Figure 2-8" style="width: 300.0px; height: 91.5px;"/>
+      <p><midi-player src="./figure2-8.midi" sound-font />
+      </details>
+<details><summary>Figure 2-9</summary>
+      <p><img src="./figure2-9.cropped.png" name="Figure 2-9" style="width: 819.0px; height: 119.0px;"/>
+      <p><midi-player src="./figure2-9.midi" sound-font />
+      </details>
+<details><summary>Figure 2-10</summary>
+      <p><img src="./figure2-10.cropped.png" name="Figure 2-10" style="width: 300.0px; height: 98.0px;"/>
+      <p><midi-player src="./figure2-10.midi" sound-font />
+      </details>
+<details><summary>Figure 2-11</summary>
+      <p><img src="./figure2-11.cropped.png" name="Figure 2-11" style="width: 450.0px; height: 94.0px;"/>
+      <p><midi-player src="./figure2-11.midi" sound-font />
+      </details>
+<details><summary>Figure 2-12</summary>
+      <p><img src="./figure2-12.cropped.png" name="Figure 2-12" style="width: 377.0px; height: 91.5px;"/>
+      <p><midi-player src="./figure2-12.midi" sound-font />
+      </details>
+<details><summary>Figure 2-13</summary>
+      <p><img src="./figure2-13.cropped.png" name="Figure 2-13" style="width: 704.0px; height: 256.5px;"/>
+      <p><midi-player src="./figure2-13.midi" sound-font />
+      </details>
+<details><summary>Figure 2-14</summary>
+      <p><img src="./figure2-14.cropped.png" name="Figure 2-14" style="width: 223.0px; height: 235.5px;"/>
+      <p><midi-player src="./figure2-14.midi" sound-font />
+      </details>
+<details><summary>Figure 2-15</summary>
+      <p><img src="./figure2-15.cropped.png" name="Figure 2-15" style="width: 946.0px; height: 104.0px;"/>
+      <p><midi-player src="./figure2-15.midi" sound-font />
+      </details>
+<details><summary>Figure 2-16</summary>
+      <p><img src="./figure2-16.cropped.png" name="Figure 2-16" style="width: 1123.0px; height: 527.0px;"/>
+      <p><midi-player src="./figure2-16.midi" sound-font />
+      </details>
+<details><summary>Figure 2-17</summary>
+      <p><img src="./figure2-17.cropped.png" name="Figure 2-17" style="width: 306.5px; height: 244.0px;"/>
+      <p><midi-player src="./figure2-17.midi" sound-font />
+      </details>
+<details><summary>Figure 2-18</summary>
+      <p><img src="./figure2-18.cropped.png" name="Figure 2-18" style="width: 646.0px; height: 216.5px;"/>
+      <p><midi-player src="./figure2-18.midi" sound-font />
+      </details>
+<details><summary>Figure 2-19</summary>
+      <p><img src="./figure2-19.cropped.png" name="Figure 2-19" style="width: 489.5px; height: 210.5px;"/>
+      <p><midi-player src="./figure2-19.midi" sound-font />
+      </details>
+
+
+    <h2>Chapter 3: Chord/Scale Theory</h2>
+
+
+
+<details><summary>Figure 3-142</summary>
+      <p><img src="./figure3-142.cropped.png" name="Figure 3-142" style="width: 633.5px; height: 208.5px;"/>
+      <p><midi-player src="./figure3-142.midi" sound-font />
+      </details>
+<details><summary>Figure 3-143</summary>
+      <p><img src="./figure3-143.cropped.png" name="Figure 3-143" style="width: 804.0px; height: 212.5px;"/>
+      <p><midi-player src="./figure3-143.midi" sound-font />
+      </details>
