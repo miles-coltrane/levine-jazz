@@ -18,7 +18,7 @@
     \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
-      \skip \pppp % to prevent named chords sounding
+      \set midiMaximumVolume = #0 % prevent named chords sounding
       a2:min7 d:7 | g1:maj7 | cs2:min7 fs2:7 | b1:maj7
     }
     \new Staff {
