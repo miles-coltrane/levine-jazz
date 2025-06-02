@@ -16,6 +16,7 @@
   {
     <<
     \chords {
+      \set chordChanges = ##t % only show chords when they change
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
