@@ -42,20 +42,27 @@
       }
     }
     \new Staff {
-      \clef bass {
-        \relative {
-          % TODO: align text
-          \skip \f % spacer to set voice volume
-          <d~ fs~>1_\markup{V} |
-          <d  fs>_\markup{of} |
-          <g,~ f'~>_\markup{V} |
-          <g   f'>_\markup{of} |
-          <c~ e~>_\markup{V} |
-          <c  e>_\markup{of} |
-          <f,~ ef'~>_\markup{V} |
-          <f  ef'> |
+      <<
+        \clef bass {
+          \relative {
+            \skip \f % spacer to set voice volume
+            <d~ fs~>1 |
+            <d  fs> |
+            <g,~ f'~> |
+            <g   f'> |
+            <c~ e~> |
+            <c  e> |
+            <f,~ ef'~> |
+            <f  ef'> |
+          }
         }
-      }
+        \new Lyrics \lyricmode {
+          "V"1 | "of"1 |
+          "V"1 | "of"1 |
+          "V"1 | "of"1 |
+          "V"1
+        }
+      >>
     }
     >>
   }

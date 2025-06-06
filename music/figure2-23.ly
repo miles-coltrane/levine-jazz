@@ -37,22 +37,31 @@
       }
     }
     \new Staff {
-      \clef bass {
-        \relative {
-          % TODO: align text
-          \skip \f % spacer to set voice volume
-          <g df' gf>2_\markup{V of}
-          <gf c f>_\markup{V of} |
-          <f b e>_\markup{V of}
-          <e bf' ef>4._\markup{V}
-          <a~ ef'~ af~>8_\markup{of} |
-          <a ef' af>2_\markup{V of}
-          <af d g>_\markup{V of} |
-          <g df'>2_\markup{V of}
-          <gf c f>4._\markup{V of}
-          <f cf'>8_\markup{V}|
+      <<
+        \clef bass {
+          \relative {
+            \skip \f % spacer to set voice volume
+            <g df' gf>2
+            <gf c f> |
+            <f b e> <e bf' ef>4. <a~ ef'~ af~>8 |
+            <a ef' af>2 <af d g> |
+            <g df'>2 <gf c f>4. <f cf'>8 |
+          }
         }
-      }
+        \new Lyrics \with {
+          \override LyricText.self-alignment-X = #LEFT
+        } \lyricmode {
+          "V of"2
+          "V of"2
+          "V of"2
+          "V"4 "of"4
+          "V of"2
+          "V of"2
+          "V of"2
+          "V of"4.
+          "V"8
+        }
+      >>
     }
     >>
   }

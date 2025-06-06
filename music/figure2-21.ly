@@ -32,22 +32,29 @@
       \key c \major
       \numericTimeSignature
       \time 4/4
-      \clef treble
-      % TODO: align text below staff
-      % TODO: get text below root names
-      \textSpannerDown
-
-      \override TextSpanner.bound-details.left.text = \markup { \upright "chords follow the cycle of 5ths from F to D♭" }
-      s1_\markup{F......}\startTextSpan |
-      s_\markup{B\flat......} |
-      s_\markup{E\flat......} |
-      s_\markup{A\flat......} |
-      s_\markup{D\flat......}\stopTextSpan |
-
-      \override TextSpanner.bound-details.left.text = \markup { \upright "and then from D to C" }
-      s2_\markup{D...}\startTextSpan s2_\markup{G...} |
-      s1_\markup{C} |
-      s\stopTextSpan
+      <<
+        \clef treble {
+           s1 | s | s | s | s | s | s | s |
+        }
+        \new Lyrics \with {
+          \override LyricText.self-alignment-X = #LEFT
+        } \lyricmode {
+          "F....."1
+          "B♭....."1
+          "E♭....."1
+          "A♭....."1
+          "D♭"1
+          "D..."2 "G..."2
+          "C"1
+        }
+        \new Lyrics \with {
+          \override LyricText.self-alignment-X = #LEFT
+        } \lyricmode {
+          "chords follow the cycle of 5ths from F to D♭...."\longa
+          ""1
+          "and then from D to C"\breve
+        }
+      >>
     }
     >>
   }

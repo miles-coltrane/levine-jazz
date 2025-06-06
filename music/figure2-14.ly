@@ -11,6 +11,14 @@
       \Score
       \omit BarNumber
     }
+    \context {
+      \Lyrics
+      \consists Bar_engraver
+      \consists Separating_line_group_engraver
+      \hide BarLine
+      \override Lyrics.LyricSpace.self-alignment-X = #LEFT
+
+    }
     indent = 0\mm
   }
   {
@@ -38,15 +46,19 @@
     \new Staff {
       \clef bass {
         \relative {
-          % TODO: put II / V above "in key of"
           \skip \f % spacer to set voice volume
-          \textSpannerDown
-          \override TextSpanner.bound-details.left.text = \markup { \upright "in key of C" }
           \partial 4
-          <g, f'>4-\markup{V}\startTextSpan \bar "||"
-          <c e a>1-\markup{I}\stopTextSpan
+          <g, f'>4 \bar "||"
+          <c e a>1
           \bar "||"
         }
+      }
+      \addlyrics {
+        \markup \left-column {
+          "     V"
+          "     in key"
+        }
+        \markup \left-column { "  I" "of C"}
       }
     }
     >>

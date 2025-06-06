@@ -51,23 +51,29 @@
       }
     }
     \new Staff {
-      \clef bass {
-        \relative {
-          \skip \f % spacer to set voice volume
-          % TODO: align text below staff
-          % TODO: put II / V above "in key of"
-          \textSpannerDown
-          \override TextSpanner.bound-details.left.text = \markup { \upright "in key of E" }
-          fs,2-\markup{II}\startTextSpan b-\markup{V}\stopTextSpan |
-          \override TextSpanner.bound-details.left.text = \markup { \upright "in key of D" }
-          e,-\markup{II}\startTextSpan a-\markup{V}\stopTextSpan |
-          \override TextSpanner.bound-details.left.text = \markup { \upright "in key of E" }
-          fs2-\markup{II}\startTextSpan b-\markup{V}\stopTextSpan |
-          \override TextSpanner.bound-details.left.text = \markup { \upright "in key of D" }
-          e,-\markup{II}\startTextSpan a-\markup{V}\stopTextSpan |
-          \bar "||"
+      <<
+        \clef bass {
+          \relative {
+            \skip \f % spacer to set voice volume
+            fs,2 b | e, a | fs2 b | e, a
+            \bar "||"
+          }
         }
-      }
+        \new Lyrics \lyricmode {
+          "II"2 "V"2 |
+          "II"2 "V"2 |
+          "II"2 "V"2 |
+          "II"2 "V"2 |
+        }
+        \new Lyrics \with {
+          \override LyricText.self-alignment-X = #LEFT
+        } \lyricmode {
+          "in key of E"1
+          "in key of D"1
+          "in key of E"1
+          "in key of D"1
+        }
+      >>
     }
     >>
   }
