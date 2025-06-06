@@ -30,7 +30,7 @@
       \time 4/4
       \clef bass
       {
-        \sectionLabel "Joe Henderson 'No Me Escueca' bass part intro" % TODO: not getting 'No'
+        \sectionLabel "Joe Henderson 'No Me Escueca' bass part intro"
         \relative {
           \skip \ff % spacer to set voice volume
           \once\override HorizontalBracketText.text = "major 9th"
