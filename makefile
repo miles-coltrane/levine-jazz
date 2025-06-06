@@ -17,6 +17,9 @@ serve: all
 # Open a browser tab connected to the local web server.
 open:
 	open http://localhost:8000/
+watch:
+	fswatch -o contents.html music | xargs -n1 -I{} $(MAKE)
+
 docs/index.html: contents.html scripts/generate.py | docs
 	./scripts/generate.py --dir=docs --input=$< --output=$@
 docs/%.cropped.png: music/%.ly | docs
