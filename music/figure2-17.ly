@@ -30,28 +30,32 @@ seventh = \finger\markup{\override #'(font-name . "sans")"7th"}
       \clef treble {
         \relative {
           \skip \f % spacer to set voice volume
-          % TODO: straight lines rather than slurs
-          % TODO: align chord numbers
           \override Fingering.staff-padding = #'()
           \set fingeringOrientations = #'(left)
-          <f' c'\(-\seventh>2
+          \set glissandoMap = #'((1 . 1))
+          <f' c'-\seventh>2\glissando
           \set fingeringOrientations = #'(up left)
-          < f\(\seventh b\)\third >2 |
+          \set glissandoMap = #'((0 . 0))
+          <f\seventh b\third >2\glissando |
           \set fingeringOrientations = #'(right)
-          <e\)\third b'>1
+          <e\third b'>1
           \bar "||"
         }
       }
     }
     \new Staff {
-      \clef bass {
-        \relative {
-          \skip \f % spacer to set voice volume
-          d,2-\markup{II} g2-\markup{V} |
-          c,1-\markup{I}
-          \bar "||"
+      <<
+        \clef bass {
+          \relative {
+            \skip \f % spacer to set voice volume
+            d,2 g2 | c,1
+            \bar "||"
+          }
         }
-      }
+        \addlyrics {
+          II V I
+        }
+      >>
     }
     >>
   }
