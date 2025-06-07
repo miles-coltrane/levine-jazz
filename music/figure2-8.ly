@@ -27,10 +27,26 @@
       \override Timing.TimeSignature.stencil = ##f
       \clef treble
       \relative {
+        \set fingeringOrientations = #'(right)
         \skip \f % spacer to set voice volume
-        <d' f a c>1 | % TODO: add interval annotation D->F : minor 3rd
-        <d f a c>1 | % TODO: add interval annotation D->A : perfect 5th
-        <d f a c>1 | % TODO: add interval annotation D->C : minor 7th
+        <
+          d'
+          f\finger\markup{\override #'(font-name . "sans")"minor 3rd"}
+          a
+          c
+        >1 |
+        <
+          d
+          f
+          a\finger\markup{\override #'(font-name . "sans")"perfect 5th"}
+          c
+        >1 |
+        <
+          d
+          f
+          a
+          c\finger\markup{\override #'(font-name . "sans")"minor 7th"}
+        >1 |
         \bar "||"
       }
     }
