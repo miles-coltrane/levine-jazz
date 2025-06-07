@@ -2,8 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
-third = \finger\markup{\override #'(font-name . "sans")"3rd"}
-seventh = \finger\markup{\override #'(font-name . "sans")"7th"}
+\include "include/thirds.ly"
 \score {
   \midi {
     \tempo 4=120

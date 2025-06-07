@@ -2,6 +2,8 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+\include "include/box-head.ly"
+\include "include/thirds.ly"
 \score {
   \midi {
     \tempo 4=140
@@ -17,6 +19,7 @@
   {
     <<
     \chords {
+      \set chordChanges = ##t % only show chords when they change
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
@@ -28,19 +31,21 @@
       \time 8/4
       \clef treble
       \relative {
-        \skip \f % spacer to set voice volume
-        \sectionLabel \markup \right-align { "C Ionian mode" }
-        % TODO: add boxes around 1/3/5/7
-        c'4-\markup { root }
-        d-\markup { 2nd }
-        e-\markup { 3rd }
-        f-\markup { 4th }
-        g-\markup { 5th }
-        a-\markup { 6th }
-        b-\markup { 7th }
-        c-\markup { octave } |
-        <c, e g b>1
+        \skip \fff % spacer to set voice volume
+        \sectionLabel \markup { "           C Ionian mode" }
+        \boxHead c'4
+        d
+        \boxHead e
+        f
+        \boxHead g
+        a
+        \boxHead b
+        c |
+        <c,\root e\third g\fifth b\seventh>1
         \bar "||"
+      }
+      \addlyrics {
+        root "2nd" "3rd" "4th" "5th" "6th" "7th" "octave" "I"
       }
     }
     >>

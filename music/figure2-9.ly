@@ -2,6 +2,8 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+\include "include/box-head.ly"
+\include "include/thirds.ly"
 \score {
   \midi {
     \tempo 4=140
@@ -17,6 +19,7 @@
   {
     <<
     \chords {
+      \set chordChanges = ##t % only show chords when they change
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
@@ -28,19 +31,21 @@
       \time 8/4
       \clef treble
       \relative {
-        \skip \f % spacer to set voice volume
-        \sectionLabel \markup \right-align { "G Mixolydian mode" }
-        % TODO: add boxes around 1/3/5/7
-        g'4-\markup { root }
-        a-\markup { 2nd }
-        b-\markup { 3rd }
-        c-\markup { 4th }
-        d-\markup { 5th }
-        e-\markup { 6th }
-        f-\markup { 7th }
-        g-\markup { octave } |
-        <g, b d f>1
+        \skip \fff % spacer to set voice volume
+        \sectionLabel \markup { "           G Mixolydian mode" }
+        \boxHead g'4
+        a
+        \boxHead b
+        c
+        \boxHead d
+        e
+        \boxHead f
+        g |
+        <g,\root b\third d\fifth f\seventh>1
         \bar "||"
+      }
+      \addlyrics {
+        root "2nd" "3rd" "4th" "5th" "6th" "7th" "octave" "V"
       }
     }
     >>

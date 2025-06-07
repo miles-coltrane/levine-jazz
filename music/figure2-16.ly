@@ -58,30 +58,30 @@
           \markup \left-column { "V   -" "in C" }4 |
           "I"1 |
           ""1 |
-          \markup \left-column { "II  -  -  -" "in B♭" }1 |
+          \markup \left-column { "II   -   -   -" "in B♭" }1 |
           "V"1 |
           \markup \left-column { "I" "in G" }1 | \break
           ""1 |
-          \markup \left-column { "II  -  -  -" "in A♭" }1 |
+          \markup \left-column { "II   -   -   -" "in A♭" }1 |
           "V"1 |
-          \markup \left-column { "II  -  -  -" "in G" }1 |
+          \markup \left-column { "II   -   -   -" "in G" }1 |
           "V"1 | \break
           \alternative {
             \volta 1 {
               \markup \left-column { "II" "in A" }1 |
-              \markup \left-column { "II   -   -" "in D" }1 |
+              \markup \left-column { "II    -    -" "in D" }1 |
               "V"1 |
               ""1
-              \markup \left-column { "II   -" "in G" }2 "V"2 |
-              \markup \left-column { "II   -" "in C" }2 "V"2 | \break
+              \markup \left-column { "II    -" "in G" }2 "V"2 |
+              \markup \left-column { "II    -" "in C" }2 "V"2 | \break
             }
             \volta 2 {
-              \markup \left-column { "II   -" "in E" }2 "V"2 |
-              \markup \left-column { "II  -  -  -" "in D" }1 |
+              \markup \left-column { "II    -" "in E" }2 "V"2 |
+              \markup \left-column { "II   -   -   -" "in D" }1 |
               "V"1 |
-              \markup \left-column { "II   -" "in G" }2 "V   -"2 |
+              \markup \left-column { "II    -" "in G" }2 "V    -"2 |
               "I"1 |
-              \markup \left-column { "II   -" "in C" }2 "V"2 | \break
+              \markup \left-column { "II    -" "in C" }2 "V"2 | \break
             }
           }
         }
