@@ -3,7 +3,7 @@
 * duration is assumed same-as-previous if omitted
 * `*s` or `*-sharp` = sharp
 * `*f` or `*-flat` = flat
-* for copy-pasting into text:   ♭   ♯   ♮
+* for copy-pasting into text:   ♭   ♯   ♮  Δ   ø
 * append number for duration, 8 => 1/8, 4 => 1/4 etc.  `\breve` for 2
 * append tilde `~` for tie
 * `< a b c >4` for chords

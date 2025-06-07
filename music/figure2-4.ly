@@ -12,12 +12,13 @@
     }
     indent = 0\mm
   }
+  % TODO: set I, II, ... VII to left of staves
   <<
     \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp
-      c\breve:maj7 | d:min7 | e:min7 | f:aug7 | g:7 | a:min7 | b:min7.5-
+      c\breve:maj7 | d:min7 | e:min7 | f:maj7 | g:7 | a:min7 | b:min7.5- % TODO: need f:maj7 sharp-4
     }
     \new Staff {
       \key c \major
