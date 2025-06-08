@@ -13,8 +13,7 @@
     }
     indent = 0\mm
   }
-  {
-    <<
+  \new GrandStaff <<
     \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
@@ -75,6 +74,5 @@
         }
       >>
     }
-    >>
-  }
+  >>
 }

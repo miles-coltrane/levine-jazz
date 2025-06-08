@@ -13,8 +13,7 @@
     }
     indent = 0\mm
   }
-  {
-    <<
+  \new GrandStaff <<
     \chords {
       \set chordChanges = ##t % only show chords when they change
       \set noChordSymbol = ""
@@ -60,6 +59,5 @@
       \markup \left-column { "II" "V of " }
       \markup \left-column { "V" "V" }
     }
-    >>
-  }
+  >>
 }

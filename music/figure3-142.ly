@@ -11,8 +11,7 @@
       \omit BarNumber
     }
   }
-  {
-    <<
+  \new GrandStaff <<
     \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
@@ -46,6 +45,5 @@
         }
       }
     }
-    >>
-  }
+  >>
 }
