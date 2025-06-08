@@ -22,6 +22,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
+      \set chordNameExceptions = #altExceptions
       a2:m7.5- d:alt | g:m7.5- c:alt | f:min7 bf:alt
     }
     \new Staff {

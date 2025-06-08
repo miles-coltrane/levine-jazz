@@ -20,6 +20,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \set midiMaximumVolume = #0 % prevent named chords sounding
+      \set chordNameExceptions = #altExceptions
       a2:7 d:alt | g:7 c:7.9+ | f:7.9+ bf:7 | ef:7 af4.:7 df8:7 |
     }
     \new Staff {

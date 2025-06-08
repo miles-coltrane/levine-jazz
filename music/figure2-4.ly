@@ -18,7 +18,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp
-      c\breve:maj7 | d:min7 | e:min7 | f:maj7 | g:7 | a:min7 | b:min7.5- % TODO: need f:maj7 sharp-4
+      c\breve:maj7 | d:min7 | e:min7 | f:maj7 | g:7 | a:min7 | b:min7.5- % TODO: want "FΔ ♯4"
     }
     \new Staff {
       \key c \major

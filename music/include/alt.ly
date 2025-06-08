@@ -15,7 +15,7 @@
            (list
             (ly:make-pitch 0 6 FLAT) ; b7
             (ly:make-pitch 0 8 FLAT) ; b9
-            (ly:make-pitch 0 9 FLAT) ; s9 == b10
+            (ly:make-pitch 0 9 FLAT) ; b10 == s9
             (ly:make-pitch 0 10 SHARP) ; s11
             (ly:make-pitch 0 12 FLAT) ; b13
             )))
@@ -23,3 +23,11 @@
 %% update chordmodifiers to use alt
 chordmodifiers =
 #`((alt . ,alt-modifier) . ,chordmodifiers)
+
+altExceptionMusic = {
+  <c e g bf df' ef' fs' af'>-\markup { \super "7alt" } % altered chord (super-Locrian)
+}
+
+altExceptions = #(append
+  (sequential-music-to-chord-exceptions altExceptionMusic #t)
+  ignatzekExceptions)

@@ -1,6 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
+\include "include/sus.ly"
 \score {
   \midi {
     \tempo 4=160
@@ -18,8 +19,9 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp
-      c\breve:maj7 | d:min7 | e:sus | f:maj7 | % TODO: want "Esus ♭9" and "FΔ ♯4"
-      g:7 | a:min | b:min7.5- | g:sus % TODO: want "A- ♭6" and "G sus"
+      \set chordNameExceptions = #susExceptions
+      c\breve:maj7 | d:min7 | e:sus9- | f:maj7 | % TODO: want "FΔ ♯4"
+      g:7 | a:min6- | b:min7.5- | g:sus % TODO: want "Gsus" not "Gsus4"
     }
     \new Staff {
       \key c \major
