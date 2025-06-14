@@ -8,19 +8,39 @@
 
     <script>
 
-      const expandElements = shouldExpand => {
+      const expandAllElements = expand => {
 
-        let detailsElements = document.querySelectorAll("details");
+        let elts = document.querySelectorAll("details");
 
-        detailsElements = [...detailsElements];
+        elts = [...elts];
 
-        if (shouldExpand) {
+        if (expand) {
 
-          detailsElements.map(item => item.setAttribute("open", shouldExpand));
+          elts.map(item => item.setAttribute("open", true));
 
         } else {
 
-          detailsElements.map(item => item.removeAttribute("open"));
+          elts.map(item => item.removeAttribute("open"));
+
+        }
+
+      };
+
+      const expandChElements = (chId, expand) => {
+
+        let chapter = document.querySelector(chId);
+
+        let elts = chapter.querySelectorAll("details");
+
+        elts = [...elts];
+
+        if (expand) {
+
+          elts.map(item => item.setAttribute("open", true));
+
+        } else {
+
+          elts.map(item => item.removeAttribute("open"));
 
         }
 
@@ -34,15 +54,19 @@
 
     <h1>The Jazz Theory Book by Mark Levine</h1>
 
+    <button onClick="expandAllElements(true)">Expand all</button>
 
-
-    <button onClick="expandElements(true)">Expand all</button>
-
-    <button onClick="expandElements(false)">Collapse all</button>
+    <button onClick="expandAllElements(false)">Collapse all</button>
 
 
 
     <h2>Chapter 1: Basic Theory</h2>
+
+    <div id="ch1">
+
+      <button onClick="expandChElements('#ch1', true)">Expand all</button>
+
+      <button onClick="expandChElements('#ch1', false)">Collapse all</button>
 
 
 
@@ -196,9 +220,17 @@
       <p><img src="./figure1-7.cropped.png" name="Figure 1-7" style="width: 1123.0px; height: 202.0px;"/>
       <p><midi-player src="./figure1-7.midi" sound-font />
       </details>
+    </div>
 
 
-      <h2>Chapter 2: The Major Scale and the II-V-I Progression</h2>
+
+    <h2>Chapter 2: The Major Scale and the II-V-I Progression</h2>
+
+    <div id="ch2">
+
+      <button onClick="expandChElements('#ch2', true)">Expand all</button>
+
+      <button onClick="expandChElements('#ch2', false)">Collapse all</button>
 
 <details><summary>Figure 2-1</summary>
       <p><img src="./figure2-1.cropped.png" name="Figure 2-1" style="width: 466.5px; height: 194.0px;"/>
@@ -351,6 +383,12 @@
 
 
     <h2>Chapter 3: Chord/Scale Theory</h2>
+
+    <div id="ch3">
+
+      <button onClick="expandChElements('#ch3', true)">Expand all</button>
+
+      <button onClick="expandChElements('#ch3', false)">Collapse all</button>
 
 <details><summary>Figure 3-1</summary>
       <p><img src="./figure3-1.cropped.png" name="Figure 3-1" style="width: 173.0px; height: 169.0px;"/>
@@ -582,3 +620,5 @@
       <p><img src="./figure3-143.cropped.png" name="Figure 3-143" style="width: 816.5px; height: 212.5px;"/>
       <p><midi-player src="./figure3-143.midi" sound-font />
       </details>
+    </div>
+
