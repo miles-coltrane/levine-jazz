@@ -21,7 +21,7 @@
       \skip \pppp
       \set chordNameExceptions = #susExceptions
       c\breve:maj7 | d:min7 | e:sus9- | f:maj7 | % TODO: want "FΔ ♯4"
-      g:7 | a:min6- | b:min7.5- | g:sus % TODO: want "Gsus" not "Gsus4"
+      g:7 | a:min6- | b:min7.5- | g:sus7 % TODO: want "Gsus" not "G7sus4"
     }
     \new Staff {
       \key c \major

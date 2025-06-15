@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+\include "include/sus.ly"
 \score {
   \midi {
     \tempo 4=120
@@ -19,7 +20,8 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \set midiMaximumVolume = #0 % prevent named chords sounding
-      af1:sus | af:sus9- | df:maj7
+      \set chordNameExceptions = #susExceptions
+      af1:sus7 | af:sus9- | df:maj7
     }
     \new Staff {
       \key c \major

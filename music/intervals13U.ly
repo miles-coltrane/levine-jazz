@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+\include "include/sus.ly"
 \score {
   \midi {
     \tempo 4=140
@@ -22,6 +23,7 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
+      \set chordNameExceptions = #susExceptions
       g2.:sus9- | r | c:min7 | f:7 | bf:maj7.5+
     }
     \new Staff {
