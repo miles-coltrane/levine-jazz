@@ -23,9 +23,9 @@ watch:
 docs/index.html: contents.html scripts/generate.py | docs
 	./scripts/generate.py --dir=docs --input=$< --output=$@
 docs/%.cropped.png: music/%.ly | docs
-	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm docs/$(basename $(notdir $<)).png
+	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm -f docs/$(basename $(notdir $<)).png
 docs/%.midi: music/%.ly | docs
-	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm docs/$(basename $(notdir $<)).png
+	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm -f docs/$(basename $(notdir $<)).png
 docs:
 	mkdir -p $@
 clean: clean_html clean_png clean_midi
