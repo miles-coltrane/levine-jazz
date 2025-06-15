@@ -23,7 +23,7 @@
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
       \set chordNameExceptions = #susExceptions
-      e\breve:sus9- % TODO: want Esus b9 not E7sus4 b9
+      e\breve:sus9- % TODO: want Esus b9 not Esus4 b9
     }
     \new Staff {
       \key c \major

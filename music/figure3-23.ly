@@ -23,7 +23,7 @@
       \set minorChordModifier = \markup { "-" }
       \skip \ppp % spacer to set voice volume
       \set chordNameExceptions = #susExceptions
-      g\breve:sus7 % TODO: want Gsus not G7sus4
+      g\breve:sus7
     }
     \new Staff {
       \key c \major
