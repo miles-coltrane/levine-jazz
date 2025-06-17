@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Uses midicsv built from https://www.fourmilab.ch/webtools/midicsv/#Download
+
+BASE="$1"
+
+tmp=$(mktemp -d /tmp/midi-compare.XXXXXX)
+trap exiting exit
+function exiting() { rm -rf "${tmp}"; exit; }
+
+midicsv "docs/$BASE.midi" > "${tmp}/after.csv"
+git restore "docs/$BASE.midi"
+midicsv "docs/$BASE.midi" > "${tmp}/before.csv"
+
+diff "${tmp}/before.csv" "${tmp}/after.csv"
+
+rm "docs/$BASE.midi"
+make "docs/$BASE.midi"
