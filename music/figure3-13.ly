@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  d2:min7 g:7 | c:maj7 f:maj7 % TODO: want "FΔ ♯4"
+  d2:min7 g:7 | c:maj7 f:maj7.11+
 }
 theTreble = \relative {
   <c' f a>2 <b e a> |

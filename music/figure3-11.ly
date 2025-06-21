@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  c:maj7 % TODO: want "CΔ ♯4"
+  c:maj7.11+
 }
 theTreble = \relative {
   \override Fingering.staff-padding = #'()

@@ -1,7 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
-\include "include/alt.ly"
+\include "include/chords.ly"
 \score {
   \midi {
     \tempo 4=120
@@ -35,8 +35,9 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \set midiMaximumVolume = #0 % prevent named chords sounding
-      ef2.:maj7 | f:maj7 | bf:maj7 | c:maj7 | \break % TODO: want "Δ ♯4" on every chord
-      ef:maj7 | f4.:maj7  bf:maj7 | g:maj7 af:maj7 | bf4:maj7 c2:maj7 % TODO: want "Δ ♯4" on every chord
+      \set chordNameExceptions = #chordsExceptions
+      ef2.:maj7.11+ | f:maj7.11+ | bf:maj7.11+ | c:maj7.11+ | \break
+      ef:maj7.11+ | f4.:maj7.11+  bf:maj7.11+ | g:maj7.11+ af:maj7.11+ | bf4:maj7.11+ c2:maj7.11+
     }
     \new Staff {
       \key c \major

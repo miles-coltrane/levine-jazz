@@ -1,7 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
-\include "include/sus.ly"
+\include "include/chords.ly"
 \score {
   \midi {
     \tempo 4=160
@@ -19,8 +19,8 @@
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
       \skip \pppp
-      \set chordNameExceptions = #susExceptions
-      c\breve:maj7 | d:min7 | e:sus9- | f:maj7 | % TODO: want "FΔ ♯4"
+      \set chordNameExceptions = #chordsExceptions
+      c\breve:maj7 | d:min7 | e:sus9- | f:maj7.11+ |
       g:7 | a:min6- | b:min7.5- | g:sus7
     }
     \new Staff {

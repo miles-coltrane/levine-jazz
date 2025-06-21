@@ -5,7 +5,7 @@ theTempo = 140
 theKey = c
 theSignature = 8/4
 theChords = \chordmode {
-  f\breve:maj7 % TODO: want "FΔ ♯4"
+  f\breve:maj7.11+
 }
 theName = \markup { "IV" }
 theTreble = {

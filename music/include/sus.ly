@@ -16,7 +16,7 @@
             (ly:make-pitch 0 6 FLAT) ; b7
             )))
 
-%% update chordmodifiers to use this sus for ":jsus"
+%% update chordmodifiers to use this sus for ":jsus" ; it will also be used for ":sus7"
 chordmodifiers =
 #`((jsus . ,sus-modifier) . ,chordmodifiers)
 

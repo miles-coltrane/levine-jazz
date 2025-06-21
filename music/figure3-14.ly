@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {
-  af2.:maj7 | gf2.:maj7 % TODO: want "A♭Δ ♯4" "G♭Δ ♯4"
+  af2.:maj7.11+ | gf2.:maj7.11+
 }
 theTreble = \relative {
   \tuplet 3/2 {d'8 bf'8 <c,~ d~ g~>8} <c d g>4.

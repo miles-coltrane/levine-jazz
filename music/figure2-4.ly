@@ -1,6 +1,7 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
+\include "include/chords.ly"
 \score {
   \midi {
     \tempo 4=160
@@ -17,8 +18,9 @@
     \chords {
       \set noChordSymbol = ""
       \set minorChordModifier = \markup { "-" }
+      \set chordNameExceptions = #chordsExceptions
       \skip \pppp
-      c\breve:maj7 | d:min7 | e:min7 | f:maj7 | g:7 | a:min7 | b:min7.5- % TODO: want "FΔ ♯4"
+      c\breve:maj7 | d:min7 | e:min7 | f:maj7.11+ | g:7 | a:min7 | b:min7.5-
     }
     \new Staff {
       \key c \major
