@@ -12,7 +12,7 @@ theTreble = \relative {
   \set fingeringOrientations = #'(right)
   <f'\seventh bf c~>2
   <<
-    { c'8 c8 \tuplet 3/2 {c8 f8 c8} }
+    { \stemUp c'8 c8 \tuplet 3/2 {c8 f8 c8} }
     \new Voice { \voiceTwo e,2\third }
   >>
   |

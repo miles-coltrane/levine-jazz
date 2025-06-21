@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  r1 | bf:maj7.3-: af:maj7.3-
+  r1 | bf:maj7.3- af:maj7.3-
 }
 theTreble = \relative {
   r4 bf8 c df ef \tuplet 3/2 {f af bf } |
