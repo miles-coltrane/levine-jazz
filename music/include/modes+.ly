@@ -32,23 +32,14 @@
       \clef treble
       \relative {
         \skip \ff
-        % TODO: automatic right-align
-        \sectionLabel \markup \right-align { \theModeC }
-        \theNotesC \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeD }
-        \theNotesD \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeE }
-        \theNotesE \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeF }
-        \theNotesF \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeG }
-        \theNotesG \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeA }
-        \theNotesA \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeB }
-        \theNotesB \bar "||" \break
-        \sectionLabel \markup \right-align { \theModeExtra }
-        \theNotesExtra \bar "||" \break
+        \theNotesC ^\markup\center-align{\theModeC} \bar "||" \break
+        \theNotesD ^\markup\center-align{\theModeD} \bar "||" \break
+        \theNotesE ^\markup\center-align{\theModeE} \bar "||" \break
+        \theNotesF ^\markup\center-align{\theModeF} \bar "||" \break
+        \theNotesG ^\markup\center-align{\theModeG} \bar "||" \break
+        \theNotesA ^\markup\center-align{\theModeA} \bar "||" \break
+        \theNotesB ^\markup\center-align{\theModeB} \bar "||" \break
+        \theNotesExtra ^\markup\center-align{\theModeExtra} \bar "||" \break
       }
       \addlyrics {
         \theLyricsC |
