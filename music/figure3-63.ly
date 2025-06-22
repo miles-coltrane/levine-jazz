@@ -1,62 +1,39 @@
 \version "2.24.4"
-\language "english"
-#(ly:set-option 'crop #t)
-\include "include/chords.ly"
-\score {
-  \midi {
-    \tempo 4=160
-  }
-  \layout {
-    \context {
-      \Score
-      \omit BarNumber
-    }
-    indent = 0\mm
-  }
-  % TODO: set I, II, ... VII to left of staves
-  <<
-    \chords {
-      \set noChordSymbol = ""
-      \set minorChordModifier = \markup { "-" }
-      \skip \pppp
-      \set chordNameExceptions = #chordsExceptions
-      c\breve:maj7.3- |
-      d:sus7.9- |
-      ef:maj7.5+ |
-      f:7.11+ |
-      c\breve:maj7.3-/g |
-      a:min7.5- |
-      b:alt
-    }
-    \new Staff {
-      \key c \major
-      \override Timing.TimeSignature.stencil = ##f
-      \time 8/4
-      \clef treble
-      \relative {
-        \skip \ff
-        \sectionLabel \markup \right-align { \hspace #92 "minor-major" } % TODO: automatic right-align
-        c'4 d ef f g a b c \bar "||" \break
-        d, ef f g a b c d \bar "||" \break
-        \sectionLabel \markup \right-align { \hspace #84 "Lydian augmented" }
-        ef, f g a b c d e \bar "||" \break
-        \sectionLabel \markup \right-align { \hspace #85 "Lydian dominant" }
-        f, g a b c d ef f \bar "||" \break
-        g, a b c d ef f g \bar "||" \break
-        \sectionLabel \markup \right-align { \hspace #71 "half-dimished (or) Locrian #2" }
-        a, b c d ef f g a \bar "||" \break
-        \sectionLabel \markup \right-align { \hspace #67 "altered (or) dimished whole-tone" }
-        b, c d ef f g a b \bar "||" \break
-      }
-      \addlyrics {
-       "" "" "" "" "" "" "" "" |
-       "" "♭9" "" "" "" "" "" "" |
-       "" "" "" "♯4" "♯5" "" "" "" |
-       "" "" "" "♯11" "" "" "" "" |
-       "" "" "" "" "♭5" "♭6" "" "" |
-       "" "" "" "" "" "" "" "" |
-       "" "♭9" "♯9" "" \markup \center-column {"♯11" "♭5"} \markup \center-column { "♭13" "♯5"} "" "" |
-      }
-    }
-  >>
-}
+\include "include/prologue.ly"
+
+theChordC = \chordmode { c\breve:maj7.3- }
+theModeC = \markup { \hspace #92 "minor-major" }
+theNotesC = { c'4 d ef f g a b c }
+theLyricsC = \lyricmode { "" "" "" "" "" "" "" "" }
+
+theChordD = \chordmode { d\breve:sus7.9- }
+theModeD = \markup { "" }
+theNotesD = { d,4 ef f g a b c d  }
+theLyricsD = \lyricmode { "" "♭9" "" "" "" "" "" "" }
+
+theChordE = \chordmode { ef\breve:maj7.5+ }
+theModeE = \markup { \hspace #84 "Lydian augmented" }
+theNotesE = { ef,4 f g a b c d e }
+theLyricsE = \lyricmode { "" "" "" "♯4" "♯5" "" "" "" }
+
+theChordF = \chordmode { f\breve:7.11+ }
+theModeF = \markup { \hspace #85 "Lydian dominant" }
+theNotesF = { f,4 g a b c d ef f  }
+theLyricsF = \lyricmode { "" "" "" "♯11" "" "" "" "" }
+
+theChordG = \chordmode { g\breve:maj7.3-/g }
+theModeG = \markup { "" }
+theNotesG = { g,4 a b c d ef f g }
+theLyricsG = \lyricmode { "" "" "" "" "♭5" "♭6" "" "" }
+
+theChordA = \chordmode { a\breve:min7.5- }
+theModeA = \markup { \hspace #67 "half-diminished (or) Locrian #2" }
+theNotesA = { a,4 b c d ef f g a }
+theLyricsA = \lyricmode { "" "" "" "" "" "" "" "" }
+
+theChordB = \chordmode { b\breve:alt }
+theModeB = \markup { \hspace #64 "altered (or) diminished whole-tone" }
+theNotesB = { b,4 c d ef f g a b }
+theLyricsB = \lyricmode { "" "♭9" "♯9" "" \markup \center-column {"♯11" "♭5"} \markup \center-column { "♭13" "♯5"} "" "" | }
+
+\include "include/modes.ly"
