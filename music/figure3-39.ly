@@ -8,7 +8,7 @@ theChords = \chordmode {
   f1:maj7
 }
 theTreble = \relative {
-  % TODO: mark "minor 9th" interval from e in bass cleff to f in treble cleff
+  % TODO: mark "minor 9th" interval from e in bass clef to f in treble clef
   <a' f'>1
   \bar "||"
 }

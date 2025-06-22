@@ -8,7 +8,7 @@ theChords = \chordmode {
   g1:sus7
 }
 theTreble = \relative {
-  % TODO: mark "minor 9th" interval from b in bass cleff to c in treble cleff
+  % TODO: mark "minor 9th" interval from b in bass clef to c in treble clef
   \set fingeringOrientations = #'(left)
   <e' a c\fourth>1
   \bar "||"
