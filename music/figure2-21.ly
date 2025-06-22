@@ -11,12 +11,7 @@
     \context {
       \Score
       \omit BarNumber
-    }
-    % TODO: increase space between staves
-    \context {
-      \Staff
-      \override StaffGrouper.staff-staff-spacing.padding = #3
-      \override StaffGrouper.staff-staff-spacing.basic-distance = #12
+      \override SpacingSpanner.spacing-increment = 3
     }
     indent = 0\mm
   }
@@ -34,7 +29,7 @@
       \time 4/4
       <<
         \clef treble {
-           s1 | s | s | s | s | s | s | s |
+           s1 | s | s | s | s | s | s | s \bar "||"
         }
         \new Lyrics \with {
           \override LyricText.self-alignment-X = #LEFT
@@ -46,6 +41,11 @@
           "D♭"1
           "D..."2 "G..."2
           "C"1
+        }
+        \new Lyrics \lyricmode {
+          " "\longa
+          " "1  % U+00A0 No-Break Space (NBSP)
+          " "\breve
         }
         \new Lyrics \with {
           \override LyricText.self-alignment-X = #LEFT
