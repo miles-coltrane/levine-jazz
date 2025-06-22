@@ -3,6 +3,9 @@
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
 \include "include/slash.ly"
+\paper {
+  system-system-spacing = #'((padding . 20))
+}
 \score {
   \midi {
     \tempo 4=180
@@ -11,12 +14,6 @@
     \context {
       \Score
       \omit BarNumber
-    }
-    % TODO: increase space between staves
-    \context {
-      \Staff
-      \override StaffGrouper.staff-staff-spacing.padding = #3
-      \override StaffGrouper.staff-staff-spacing.basic-distance = #12
     }
     indent = 0\mm
   }
@@ -82,6 +79,21 @@
               \markup \left-column { "II    -" "in G" }2 "V    -"2 |
               "I"1 |
               \markup \left-column { "II    -" "in C" }2 "V"2 | \break
+            }
+          }
+        }
+      }
+      % hack in extra lyrics with X in white as a strut to increase vertical separation
+      \new Lyrics \lyricmode {
+        \repeat volta 2 {
+          \markup \with-color "white" \left-column {"X" "X"}4 | " "1 | " "1 | " "1 | " "1 | " "1 | \break
+          " "1 | \markup \with-color "white" \left-column {"X" "X"}1 | " "1 | " "1 | " "1 | \break
+          \alternative {
+            \volta 1 {
+              \markup \with-color "white" \left-column {"X" "X"}1 | " "1 | " "1 | " "1 | " "2 " "2 | " "2 " "2 | \break
+            }
+            \volta 2 {
+              " "2 " "2 | " "1 | " "1 | " "2 " "2 | " "1 | " "2 " "2 | \break
             }
           }
         }
