@@ -5,7 +5,7 @@ theTempo = 140
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  df1:11+.7+ | r | r  % TODO: using sharp-11 not sharp-4
+  df1:7.9.11+ | r | r
 }
 theLabel = \markup {
   "Joe Henderson 'Inner Urge' bar 15"
