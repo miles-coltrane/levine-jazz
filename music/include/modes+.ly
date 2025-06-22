@@ -10,7 +10,6 @@
     }
     indent = 0\mm
   }
-  % TODO: set I, II, ... VII to left of staves
   <<
     \chords {
       \set noChordSymbol = ""
@@ -26,7 +25,10 @@
       \theChordB |
       \theChordExtra |
     }
-    \new Staff {
+    \new Staff \with {
+      instrumentName = "I"
+      shortInstrumentName = "II"
+    }{
       \key c \major
       \override Timing.TimeSignature.stencil = ##f
       \time 8/4
@@ -34,11 +36,17 @@
         \skip \ff
         \theNotesC ^\markup\center-align{\theModeC} \bar "||" \break
         \theNotesD ^\markup\center-align{\theModeD} \bar "||" \break
+        \set Staff.shortInstrumentName = "III"
         \theNotesE ^\markup\center-align{\theModeE} \bar "||" \break
+        \set Staff.shortInstrumentName = "IV"
         \theNotesF ^\markup\center-align{\theModeF} \bar "||" \break
+        \set Staff.shortInstrumentName = "V"
         \theNotesG ^\markup\center-align{\theModeG} \bar "||" \break
+        \set Staff.shortInstrumentName = "VI"
         \theNotesA ^\markup\center-align{\theModeA} \bar "||" \break
+        \set Staff.shortInstrumentName = "VII"
         \theNotesB ^\markup\center-align{\theModeB} \bar "||" \break
+        \set Staff.shortInstrumentName = \theRomanExtra
         \theNotesExtra ^\markup\center-align{\theModeExtra} \bar "||" \break
       }
       \addlyrics {
