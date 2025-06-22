@@ -9,13 +9,17 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   \override Score.SpacingSpanner.spacing-increment = 3
-  % TODO: vertically align text
-  ef'4_\markup\center-align{4th} d_\markup\center-align{3rd} c bf
+  ef'4 d c bf
   \bar "||"
+}
+theLyrics = \lyricmode {
+  \markup {\smaller "4th"}
+  \markup {\smaller "3rd"}
+  "" ""
 }
 theBass = \relative {
   <bf, a'>1
   \bar "||"
 }
 
-\include "include/dual.ly"
+\include "include/dual+lyrics3.ly"

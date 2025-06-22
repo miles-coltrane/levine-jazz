@@ -1,3 +1,4 @@
+% Dual staff with lyrics below bass staff
 \score {
   \midi {
     \tempo 4=\theTempo

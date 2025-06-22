@@ -1,4 +1,4 @@
-% Dual staff with lyrics below bass staff
+% Dual staff with lyrics below treble staff
 \score {
   \midi {
     \tempo 4=\theTempo
@@ -29,16 +29,14 @@
         \theTreble
       }
     }
+    \addlyrics {
+      \theLyrics
+    }
     \new Staff {
-      <<
       \clef bass {
         \skip \f % spacer to set voice volume
         \theBass
       }
-      \new Lyrics {
-        \theLyrics
-      }
-      >>
     }
   >>
 }
