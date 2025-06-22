@@ -6,6 +6,7 @@
     \context {
       \Score
       \omit BarNumber
+      \override SpacingSpanner.spacing-increment = 4
     }
     indent = 0\mm
   }
