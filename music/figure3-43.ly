@@ -5,7 +5,7 @@ theTempo = 140
 theKey = c
 theSignature = 8/4
 theChords = \chordmode {
-  e\breve:sus9- % TODO: want Esus b9 not Esus4 b9
+  e\breve:sus7.9-
 }
 theName = \markup { "III" }
 theTreble = {

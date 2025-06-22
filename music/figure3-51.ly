@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  r4 | ef1:maj7 | ef:sus9-
+  r4 | ef1:maj7 | ef:sus7.9-
 }
 theTreble = \relative {
   \relative {

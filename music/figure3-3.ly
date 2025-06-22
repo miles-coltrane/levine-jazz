@@ -20,7 +20,7 @@
       \set minorChordModifier = \markup { "-" }
       \skip \pppp
       \set chordNameExceptions = #chordsExceptions
-      c\breve:maj7 | d:min7 | e:sus9- | f:maj7.11+ |
+      c\breve:maj7 | d:min7 | e:sus7.9- | f:maj7.11+ |
       g:7 | a:min6- | b:min7.5- | g:sus7
     }
     \new Staff {

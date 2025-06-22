@@ -21,7 +21,7 @@
       \skip \pppp
       \set chordNameExceptions = #chordsExceptions
       c\breve:maj7.3- |
-      d:sus9- | % TODO: want sus not sus4
+      d:sus7.9- |
       ef:maj7.5+ |
       f:7.11+ |
       c\breve:maj7.3-/g |

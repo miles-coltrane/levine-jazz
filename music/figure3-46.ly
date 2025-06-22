@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  af1:sus7 | af:sus9- | df:maj7
+  af1:sus7 | af:sus7.9- | df:maj7
 }
 theTreble = \relative {
   <bf df f af>2 ef4 f4 |

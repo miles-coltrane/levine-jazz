@@ -21,9 +21,17 @@ chordmodifiers =
 #`((jsus . ,sus-modifier) . ,chordmodifiers)
 
 susExceptionMusic = {
-  <c f g bf>-\markup { \super "sus" }
+  <c f g bf>-\markup { \fontsize #-2 "sus" }
+}
+
+susNineExceptionMusic = {
+  <c f g bf df'>-\markup { \fontsize #-2  "sus" \super "♭9" }
 }
 
 susExceptions = #(append
   (sequential-music-to-chord-exceptions susExceptionMusic #t)
+  ignatzekExceptions)
+
+susNineExceptions = #(append
+  (sequential-music-to-chord-exceptions susNineExceptionMusic #t)
   ignatzekExceptions)

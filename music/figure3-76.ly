@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 8/4
 theChords = \chordmode {
-  d\breve:sus7.9- % TODO: want sus not sus4
+  d\breve:sus7.9-
 }
 theName = \markup {"II"}
 theTreble = \relative {

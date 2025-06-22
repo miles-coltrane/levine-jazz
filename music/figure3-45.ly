@@ -5,7 +5,7 @@ theTempo = 140
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  e1:sus9-
+  e1:sus7.9-
 }
 theTreble = \relative {
   \set fingeringOrientations = #'(left right)
