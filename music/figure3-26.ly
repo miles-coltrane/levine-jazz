@@ -8,9 +8,9 @@ theChords = \chordmode {
   g1:sus7 | g:7
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(right) % TODO: figure why not set to R
-  c''1\fourth \bar "||"
-  c\fourth
+  \set fingeringOrientations = #'(right)
+  <c''\fourth>1 \bar "||"
+  <c\fourth>1
   \bar "||"
 }
 theBass = {

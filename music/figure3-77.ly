@@ -8,8 +8,9 @@ theChords = \chordmode {
   d1:min7.9-
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(right) % TODO: move to right
-  ef'1\finger\markup{\override #'(font-name . "sans")"♭9"}
+  \override Fingering.staff-padding = #'()
+  \set fingeringOrientations = #'(right)
+  <ef'-\finger\markup{\override #'(font-name . "sans")"♭9"}>1
   \bar "||"
 }
 theBass = {

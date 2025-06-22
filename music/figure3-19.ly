@@ -10,9 +10,9 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   \override Score.SpacingSpanner.spacing-increment = 3
-  g'8 a b c_\markup\center-align{"11th"}  d e f g |
-  \set fingeringOrientations = #'(right) % TODO: figure why not set to R
-  c,1\eleventh
+  g'8 a b c_\markup\center-align{\smaller "11th"}  d e f g |
+  \set fingeringOrientations = #'(right)
+  <c,\eleventh>1
   \bar "||"
 }
 theBass = {

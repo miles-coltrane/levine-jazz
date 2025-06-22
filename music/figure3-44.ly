@@ -1,4 +1,3 @@
-
 \version "2.24.4"
 \include "include/prologue.ly"
 
@@ -9,8 +8,9 @@ theChords = \chordmode {
   e1:min7
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(right) % TODO: fix this
-  c''1\finger\markup{\override #'(font-name . "sans")"♭6"}
+  %\override Fingering.staff-padding = #'()
+  \set fingeringOrientations = #'(right)
+  <c''-\finger\markup{\override #'(font-name . "sans")"♭6"}>1
   \bar "||"
 }
 theBass = \relative {

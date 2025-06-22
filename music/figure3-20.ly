@@ -8,8 +8,8 @@ theChords = \chordmode {
   g1:7.11+
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(right) % TODO: figure why not set to R
-  cs''1\finger\markup{\override #'(font-name . "sans")"♯11"}
+  \set fingeringOrientations = #'(right)
+  <cs''-\finger\markup{\override #'(font-name . "sans")"♯11"}>1
   \bar "||"
 }
 theBass = {

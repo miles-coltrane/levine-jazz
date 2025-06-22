@@ -9,8 +9,8 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   \override Fingering.staff-padding = #'()
-  \set fingeringOrientations = #'(right) % TODO: figure why not set to R
-  fs'1-\finger\markup{\override #'(font-name . "sans")"♯4"}
+  \set fingeringOrientations = #'(right)
+  <fs'-\finger\markup{\override #'(font-name . "sans")"♯4"}>1
   \bar "||"
 }
 theBass = {

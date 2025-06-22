@@ -8,10 +8,13 @@ theChords = \chordmode {
   g1:7 | g:7
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(right) % TODO: figure why not set to R
-  g'8 a b c_\markup\center-align{"4th"} d e f g \bar "||"
-  g,8 a b c_\markup\center-align{"4th"} d e f g \bar "||"
+  g'8 a b c d e f g \bar "||"
+  g,8 a b c d e f g \bar "||"
   \bar "||"
+}
+theLyrics = \lyricmode {
+ "" "" "" \markup {\smaller "4th"} "" "" "" "" |
+ "" "" "" \markup {\smaller "4th"} "" "" "" "" |
 }
 theBass = {
   <g c' f'>1 \bar "||"
@@ -19,4 +22,4 @@ theBass = {
   \bar "||"
 }
 
-\include "include/dual.ly"
+\include "include/dual+lyrics3.ly"

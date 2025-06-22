@@ -8,7 +8,7 @@ theChords = \chordmode {
   g1:sus7
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(left right)
+  \set fingeringOrientations = #'(right)
   <c'\fourth f a b\third>1 \bar "||"
   <f b\third d> \bar "||"
   <f b\third e> \bar "||"

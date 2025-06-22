@@ -8,27 +8,40 @@ theChords = \chordmode {
   d1:min7
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(right)
-  <
-    e'\finger\markup{\override #'(font-name . "sans")"9th"}
-    g\finger\markup{\override #'(font-name . "sans")"11th"}
-    b\finger\markup{\override #'(font-name . "sans")"13th"}
-  >1
-  \bar "||"
-  \bar "||"
-}
-theBass = \relative {
-  \set fingeringOrientations = #'(right)
-  <
-    d\finger\markup{\override #'(font-name . "sans")"root"}
-    f\finger\markup{\override #'(font-name . "sans")"3rd"}
-    a\finger\markup{\override #'(font-name . "sans")"5th"}
-    c\finger\markup{\override #'(font-name . "sans")"7th"}
-  >1
+  <<
+    {
+      \set fingeringOrientations = #'(right)
+      <
+        g'\finger\markup{\override #'(font-name . "sans")"11th"}
+      >1
+    }
+    \new Voice { \voiceTwo
+      \set fingeringOrientations = #'(left)
+      <
+        e\finger\markup{\override #'(font-name . "sans")"9th"}
+        b'\finger\markup{\override #'(font-name . "sans")"13th"}
+      >1
+    }
+  >>
   \bar "||"
 }
-{
-  % BASS CLEF HERE
+theBass = {
+  <<
+    {
+      \set fingeringOrientations = #'(right)
+      <
+        f\finger\markup{\override #'(font-name . "sans")"3rd"}
+        c'\finger\markup{\override #'(font-name . "sans")"7th"}
+      >1
+    }
+    \new Voice { \voiceTwo
+      \set fingeringOrientations = #'(left)
+      <
+        d\finger\markup{\override #'(font-name . "sans")"root"}
+        a\finger\markup{\override #'(font-name . "sans")"5th"}
+      >1
+    }
+  >>
   \bar "||"
 }
 

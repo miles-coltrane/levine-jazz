@@ -8,14 +8,23 @@ theChords = \chordmode {
   e1:sus7.9-
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(left right)
-  <
-    e'\root
-    f\finger\markup{\override #'(font-name . "sans")"♭9"}
-    a\fourth
-    b\fifth
-    d\seventh
-  >1
+  <<
+    {
+      \set fingeringOrientations = #'(right)
+      <
+        f'\finger\markup{\override #'(font-name . "sans")"♭9"}
+        b\fifth
+      >1
+    }
+    \new Voice { \voiceTwo
+      \set fingeringOrientations = #'(left)
+      <
+        e\root
+        a\fourth
+        d\seventh
+      >1
+    }
+  >>
   \bar "||"
 }
 

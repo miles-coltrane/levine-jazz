@@ -13,12 +13,18 @@ theTreble = \relative {
   <f'\seventh bf c~>2
   <<
     { \stemUp c'8 c8 \tuplet 3/2 {c8 f8 c8} }
-    \new Voice { \voiceTwo e,2\third }
+    \new Voice { \voiceTwo
+      \set fingeringOrientations = #'(right)
+      <e,\third>2
+    }
   >>
   |
   <<
     { <cf' df>1 }
-    \new Voice { \voiceTwo gf2\seventh f\third}
+    \new Voice { \voiceTwo
+      \set fingeringOrientations = #'(right)
+      <gf\seventh>2 <f\third>2
+    }
   >>
   \bar "||"
 }

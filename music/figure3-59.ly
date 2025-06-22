@@ -11,8 +11,9 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   b8 c d e  f g a b \bar "||"
-  \set fingeringOrientations = #'(right) % TODO: get to RHS
-  c,1\finger\markup{\override #'(font-name . "sans")"♭9"}^\markup{"\"avoid\" note"}
+  \override Fingering.staff-padding = #'()
+  \set fingeringOrientations = #'(right)
+  <c,-\finger\markup{\override #'(font-name . "sans")"♭9"}>1^\markup{"\"avoid\" note"}
   \bar "||"
 }
 theBass = {

@@ -8,13 +8,23 @@ theChords = \chordmode {
   f1:sus7
 }
 theTreble = \relative {
-  \set fingeringOrientations = #'(left right)
-  <bf\fourth ef\seventh g\ninth a\third>1
+  \override Timing.TimeSignature.stencil = ##f
+  % TODO: fix vertical alignment of chord in 2 voices
+  <<
+    {
+      \set fingeringOrientations = #'(right)
+      <ef'\seventh a\third>1
+    }
+    \new Voice { \voiceTwo
+      \set fingeringOrientations = #'(left)
+      <bf\fourth g'\ninth>1
+    }
+  >>
   \bar "||"
 }
 theBass = {
-  \set fingeringOrientations = #'(right)
-  f1\root
+  \set fingeringOrientations = #'(left)
+  <f\root>1
   \bar "||"
 }
 

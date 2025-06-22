@@ -11,8 +11,9 @@ theTreble = \relative {
   \partial 4 g'8. g16| g'4 e c |
   <<
     {
-      \set fingeringOrientations = #'(right) % TODO: figure why not set to R
-      b4-\finger\markup{\override #'(font-name . "sans")"♯4"}
+      \override Fingering.staff-padding = #'()
+      \set fingeringOrientations = #'(right)
+      <b-\finger\markup{\override #'(font-name . "sans")"♯4"}>4
       a2
     }
     \new Voice { \voiceTwo e2. }
