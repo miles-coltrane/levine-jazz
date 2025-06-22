@@ -28,8 +28,7 @@
       \key c \major
       \override Timing.TimeSignature.stencil = ##f
       \time 8/4
-      \clef treble
-      \relative {
+      \clef treble {
         \skip \ff
         \theNotesC ^\markup\center-align{\theModeC} \bar "||" \break
         \theNotesD ^\markup\center-align{\theModeD} \bar "||" \break
