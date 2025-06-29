@@ -5,7 +5,7 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  g1:7 | g:7
+  g1:sus7 | g:7  % NOTE: printed music has G7 | G7, but text and music implies first is Gsus
 }
 theTreble = \relative {
   g'8 a b c d e f g \bar "||"
