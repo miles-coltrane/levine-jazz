@@ -16,7 +16,7 @@ theTreble = {
   b'
   c''
   d''
-  ef''^\markup\center-align{"E♭ Lydian augmented"}
+  ef''^\markup\right-align{"E♭ Lydian augmented"}
   \bar "||"
 }
 theLyrics = \lyricmode {

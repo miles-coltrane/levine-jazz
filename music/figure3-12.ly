@@ -16,7 +16,7 @@ theTreble = {
   g'
   a'
   b'
-  c''^\markup\center-align{"C Lydian mode"}
+  c''^\markup\right-align{"C Lydian mode"}
   \bar "||"
 }
 theLyrics = \lyricmode {
