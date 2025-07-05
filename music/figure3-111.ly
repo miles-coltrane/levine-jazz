@@ -8,7 +8,7 @@ theChords = \chordmode {
   % TODO: add list of chord names
 }
 theTreble = {
-  \override SpacingSpanner.spacing-increment = 4
+  \override Score.SpacingSpanner.spacing-increment = 3
   \override Timing.TimeSignature.stencil = ##f
   g'4 a' bf' c'' d'' e'' fs'' g''^\markup\right-align{\smaller "G melodic minor scale"}
   \bar "||"

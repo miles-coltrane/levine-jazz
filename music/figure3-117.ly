@@ -9,7 +9,7 @@ theChords = \chordmode {
 }
 theTreble = {
   \override Timing.TimeSignature.stencil = ##f
-  \override SpacingSpanner.spacing-increment = 3
+  \override Score.SpacingSpanner.spacing-increment = 2
   <<
     {
       % TODO: fix vertical alignment of chord in 2 voices
