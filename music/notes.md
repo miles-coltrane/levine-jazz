@@ -18,4 +18,5 @@
 * prepend `\tieUp` to adjust direction of tie
 * put `\override SpacingSpanner.spacing-increment = 4` in `\context` to adjust horizontal spacing
 * put `\override Timing.TimeSignature.stencil = ##f` to remove time signature
-* put `\set fingeringOrientations = #'(right)` for fingering annotation locations
+* put `\set fingeringOrientations = #'(right)` for fingering annotation locations; single notes need to be put in a
+  chord, as does the fingering (e.g. `<c\third>1`)
