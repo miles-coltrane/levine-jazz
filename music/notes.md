@@ -16,7 +16,16 @@
 * `\tuplet 3/2 { a b c}` for tuplets
 * append `\noBeam` to get a flag not a beam
 * prepend `\tieUp` to adjust direction of tie
-* put `\override SpacingSpanner.spacing-increment = 4` in `\context` to adjust horizontal spacing
-* put `\override Timing.TimeSignature.stencil = ##f` to remove time signature
-* put `\set fingeringOrientations = #'(right)` for fingering annotation locations; single notes need to be put in a
-  chord, as does the fingering (e.g. `<c\third>1`)
+* to adjust horizontal spacing:
+  ```
+  \override Score.SpacingSpanner.spacing-increment = 4
+  ```
+* to remove time signature:
+  ```
+  \override Timing.TimeSignature.stencil = ##f
+  ```
+* for fingering annotation locations; single notes need to be put in a
+  chord, as does the fingering (e.g. `<c\third>1`), then:
+  ```
+  \set fingeringOrientations = #'(right)
+  ```
