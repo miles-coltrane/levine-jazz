@@ -47,7 +47,8 @@ def transmute(infile, outfile, indir):
                 style = f"width: {SIZE}%; height: auto;"
             print(f"""<details><summary>{fullname}</summary>""",file=outfile)
             print(f"""{prefix}<p><img src="{png_filename}" name="{fullname}" style="{style}"/>""", file=outfile);
-            print(f"""{prefix}<p><midi-player src="{midi_filename}" sound-font />""",file=outfile)
+            print(f"""{prefix}<midi-visualizer type="waterfall" id="{filename}-viz" />""", file=outfile);
+            print(f"""{prefix}<p><midi-player src="{midi_filename}" sound-font visualizer="#{filename}-viz" />""",file=outfile)
             print(f"""{prefix}</details>""",file=outfile)
         else:
             print(f"{line}", file=outfile);
