@@ -5,12 +5,14 @@ theTempo = 120
 theKey = c
 theSignature = 8/4
 theChords = \chordmode {
-  ef1:7/f % TODO append "(Bflat maj-min/F)"
+  ef1:7/f
 }
 theTreble = \relative {
   \override Score.SpacingSpanner.spacing-increment = 3
   \override Timing.TimeSignature.stencil = ##f
-  <df' f g c>1 f8 g a bf c df ef f^\markup\right-align{"5th mode, B♭ melodic minor"}
+  % TODO: improve markup of chord name
+  <df' f g c>1^\markup {(B♭ - \super \whiteTriangleMarkup/F)}
+  f8 g a bf c df ef f^\markup\right-align{"5th mode, B♭ melodic minor"}
   \bar "||"
 }
 theBass = {

@@ -5,12 +5,14 @@ theTempo = 120
 theKey = c
 theSignature = 9/4
 theChords = \chordmode {
-  g1:7.9- % TODO: add extra chord names
-}
-theTreble = \relative {
-  \override Score.SpacingSpanner.spacing-increment = 3
+  g1:7.9-
+}theTreble = \relative {
+  \override Score.SpacingSpanner.spacing-increment = 4
   \override Timing.TimeSignature.stencil = ##f
-  g'4 af bf b cs d e f g^\markup\right-align{\smaller "G half-step/whole step diminished scale"}
+  g'4
+  % TODO: improve markup of chord name
+  af^\markup{(also B♭7{\super ♭9}, C♯7{\super ♭9}, E7{\super ♭9})}
+  bf b cs d e f g^\markup\right-align{\smaller "G half-step/whole step diminished scale"}
   \bar "||"
 }
 theLyrics = \lyricmode {

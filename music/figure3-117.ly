@@ -4,9 +4,7 @@
 theTempo = 120
 theKey = c
 theSignature = 4/4
-theChords = \chordmode {
-  % TODO: add list of chord names
-}
+theChords = \chordmode { }
 theTreble = {
   \override Timing.TimeSignature.stencil = ##f
   \override Score.SpacingSpanner.spacing-increment = 2
@@ -17,7 +15,8 @@ theTreble = {
       <
         g'-\fifth
         d''-\ninth
-      >1 |
+      >1^\markup{\smaller C-{\super\whiteTriangleMarkup}, Dsus{\super ♭9}, E♭\whiteTriangleMarkup\super{♯5},F7{\super ♯11}, Aø, B7alt } |
+      % TODO: improve markup of chord names
       <
         ef'-\third
         b'-\seventh

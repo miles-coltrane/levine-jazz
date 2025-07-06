@@ -4,13 +4,13 @@
 theTempo = 120
 theKey = c
 theSignature = 8/4
-theChords = \chordmode {
-  % TODO: add list of chord names
-}
+theChords = \chordmode { }
 theTreble = {
-  \override Score.SpacingSpanner.spacing-increment = 3
+  \override Score.SpacingSpanner.spacing-increment = 4
   \override Timing.TimeSignature.stencil = ##f
-  d'4 e' f' g' a' b' cs'' d''^\markup\right-align{\smaller "D melodic minor scale"}
+  % TODO: improve markup of chord names
+  d'4^\markup{\smaller D-{\super\whiteTriangleMarkup}, Esus{\super ♭9}, F\whiteTriangleMarkup\super{♯5},G7{\super ♯11}, Bø, C♯7alt } |
+  e' f' g' a' b' cs'' d''^\markup\right-align{\smaller "D melodic minor scale"}
   \bar "||"
 }
 

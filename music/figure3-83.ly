@@ -5,12 +5,13 @@ theTempo = 140
 theKey = c
 theSignature = 8/4
 theChords = \chordmode {
-  ef\breve:maj7.5+ % TODO: add "(G/E♭)" after chord name
+  ef\breve:maj7.5+
 }
 theName = \markup { "III" }
 theTreble = {
   ef'4
-  f'
+  % TODO: improve markup of chord name
+  f'^\markup {(G/E♭)}
   g'
   a'
   b'

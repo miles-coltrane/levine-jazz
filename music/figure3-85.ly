@@ -5,11 +5,12 @@ theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  ef1:maj7.5+ % TODO: add "(C/A♭)" after chord name
+  ef1:maj7.5+
 }
 theTreble = \relative {
   <<
-    {c''1}
+    % TODO: improve markup of chord name
+    {c''1}^\markup{(C/A♭)}
     \new Voice { \voiceTwo
       r8
       <e,~ g~>8
