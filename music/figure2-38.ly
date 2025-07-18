@@ -17,7 +17,7 @@
     indent = 0\mm
   }
   {
-    <<
+    \new PianoStaff \with { instrumentName = VII } <<
     \chords {
       \set chordChanges = ##t % only show chords when they change
       \set noChordSymbol = ""
