@@ -22,12 +22,32 @@
           elts.map(item => item.removeAttribute("open"));
         }
       };
+      const toggleViz = (checkbox) => {
+        let players = document.querySelectorAll("midi-player");
+        let visualizers = document.querySelectorAll("midi-visualizer");
+        players = [...players];
+        visualizers = [...visualizers];
+        if (checkbox.checked == true) {
+          players.map(item => {
+            let filename = item.id.endsWith("-play") ? item.id.slice(0, -5) : item.id;
+            item.setAttribute("visualizer", "#" + filename + "-viz");
+          });
+          visualizers.map(item => item.style.display = "block");
+        } else {
+          players.map(item => item.removeAttribute("visualizer"));
+          visualizers.map(item => item.style.display = "none");
+        }
+      }
     </script>
   </head>
   <body>
     <h1>The Jazz Theory Book by Mark Levine</h1>
+
+    <label><input type="checkbox" id="toggleViz" onClick="toggleViz(this)" checked>Visualize</label>
+    <p>
     <button onClick="expandAllElements(true)">Expand all</button>
     <button onClick="expandAllElements(false)">Collapse all</button>
+
 
     <h2>Chapter 1: Basic Theory</h2>
     <div id="ch1">
