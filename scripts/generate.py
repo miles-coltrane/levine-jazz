@@ -29,8 +29,10 @@ def png_size(filename):
     return int(w), int(h)
 
 def transmute(infile, outfile, indir):
+    lineno = 0
     for line in infile:
-        line.strip()
+        lineno += 1
+        line = line.rstrip()
         m = FIGURE_RE.match(line)
         if m:
             prefix = m.group('ws')
@@ -51,7 +53,7 @@ def transmute(infile, outfile, indir):
             print(f"""{prefix}<p><midi-player id="{filename}-play" src="{midi_filename}" sound-font visualizer="#{filename}-viz" />""",file=outfile)
             print(f"""{prefix}</details>""",file=outfile)
         else:
-            print(f"{line}", file=outfile);
+            print(f"{line}", file=outfile)
 
 def usage():
     print("generate [options] infile.lst")
