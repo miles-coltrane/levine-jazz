@@ -16,7 +16,7 @@ theTreble = \relative {
   >> |
   <<
     {\stemUp a'4 c8 a8}
-    \new Voice { \voiceTwo <cs, e>4 <cs e>8}
+    \new Voice { \voiceTwo <cs, e>4. <cs e>8}
   >>
   r2
   \bar "||"
