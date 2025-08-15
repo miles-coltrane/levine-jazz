@@ -15,7 +15,7 @@ theTreble = {
   <<
     { \stemUp fs'8 d'8 e'8 }
     \new Voice { \voiceTwo <b d'>4. }
-  >> <b cs' fs'>8 <b cs' fs'>2
+  >> <b~ cs'~ fs'~>8 <b cs' fs'>2
   \bar "||"
 }
 theBass = {
