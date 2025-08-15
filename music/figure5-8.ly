@@ -6,13 +6,14 @@ theKey = c
 theSignature = 4/4
 theChords = \chordmode {
   c2:sus7 c:7.9- |
-  c:maj7.5+ % TODO: add "(E/C)" above
+  c:maj7.5+
 }
 theTreble = \relative {
   <bf d g>4. <cs~ e~ a~>8
   \tuplet 3/2 {<cs e a>8 g'8 f8}
   \tuplet 3/2 {e8 d8 <gs,~ b~ e~>8} |
-  <gs b e>1
+  % TODO: improve markup of chord name
+  <gs b e>1^\markup{ (E/C) }
   \bar "||"
 }
 theBass = {
