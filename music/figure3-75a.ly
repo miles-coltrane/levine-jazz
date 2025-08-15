@@ -8,8 +8,9 @@ theChords = \chordmode {
   fs1:sus7.9-
 }
 theTreble = \relative {
+  \override Timing.TimeSignature.stencil = ##f
   \override Score.SpacingSpanner.spacing-increment = 3
-  r2 fs'8 g a b cs d_\markup\center-align{"♭6"} e fs^\markup\right-align{"F♯ Phyrgian mode, D major"}
+  r2 \stemUp [fs'8 g a b] \stemDown [cs d_\markup\center-align{"♭6"} e fs^\markup\right-align{"F♯ Phyrgian mode, D major"}]
   \bar "||"
 }
 theBass = {
