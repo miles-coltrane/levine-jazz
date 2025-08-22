@@ -5,12 +5,13 @@ theTempo = 120
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {
-  f4:/df ef:/b f:/df c:/af |
+  \tuplet 4/3 {f4:/df ef:/b f:/df c:/af } |
   ef2.:/a |
   c:/b |
   d:7
 }
 theTreble = \relative {
+  \override Score.SpacingSpanner.spacing-increment = 3
   \tuplet 4/3 { <c' f a>4 <bf ef g> <c f a> <g c e>} |
   <bf ef g>2
   e8 g8 |
