@@ -29,3 +29,4 @@
   ```
   \set fingeringOrientations = #'(right)
   ```
+* to force display of a flat/sharp sign even when it would normally be assumed, add `!` after the note
