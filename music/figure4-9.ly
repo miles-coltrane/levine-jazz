@@ -9,7 +9,7 @@ theTreble = \relative {
   c d e fs gs as c d |
   e d c as gs fs e d | \break
   e fs gs as c d e fs |
-  gs fs e d c as ggs fs |
+  gs fs e d c as gs fs |
   gs as c d e fs gs as | \break
   c as gs fs e d c as |
   c d e fs gs as c4
