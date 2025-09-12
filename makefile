@@ -20,7 +20,7 @@ open:
 watch:
 	fswatch -o index.html music | xargs -n1 -I{} $(MAKE)
 
-docs/index.html: index.html scripts/generate.py | docs
+docs/%.html: %.html scripts/generate.py | docs
 	./scripts/generate.py --dir=docs --input=$< --output=$@
 docs/%.cropped.png: music/%.ly | docs
 	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm -f docs/$(basename $(notdir $<)).png
