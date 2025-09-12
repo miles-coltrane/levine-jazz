@@ -39,6 +39,7 @@ CONTROLS_HTML = r"""
         <label for="viz-staff">Staff</label>
       </div> -->
     </fieldset></form>
+    <a href="index.html">Back to Top</a>
     <button onClick="expandAllElements(true)">Expand all</button>
     <button onClick="expandAllElements(false)">Collapse all</button>
 """
