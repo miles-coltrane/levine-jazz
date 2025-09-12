@@ -18,6 +18,29 @@ FIGURE_RE = re.compile(r"""
        \s*
     }}$""", re.VERBOSE)
 
+VIZ_CHOICE_RE = re.compile(r"""^\s*{{viz-choice}}$""")
+
+VIZ_CHOICE_HTML = r"""
+    <form><fieldset><legend>Visualizer:</legend>
+      <div>
+        <input type="radio" id="viz-none" name="viz" value="none" onClick="toggleViz(null)" />
+        <label for="viz-none">None</label>
+      </div>
+      <div>
+        <input type="radio" id="viz-waterfall" name="viz" value="waterfall" onClick="toggleViz('waterfall')" checked />
+        <label for="viz-waterfall">Waterfall</label>
+      </div>
+      <div>
+        <input type="radio" id="viz-piano-roll" name="viz" value="piano-roll" onClick="toggleViz('piano-roll')" />
+        <label for="viz-piano-roll">Piano Roll</label>
+      </div>
+      <!-- <div>
+        <input type="radio" id="viz-staff" name="viz" value="staff" onClick="toggleViz('staff')" />
+        <label for="viz-staff">Staff</label>
+      </div> -->
+    </fieldset></form>
+"""
+
 SIZE = 50 # percent
 
 def png_size(filename):
@@ -52,6 +75,8 @@ def transmute(infile, outfile, indir):
             print(f"""{prefix}<midi-visualizer type="waterfall" id="{filename}-viz" />""", file=outfile);
             print(f"""{prefix}<p><midi-player id="{filename}-play" src="{midi_filename}" sound-font visualizer="#{filename}-viz" />""",file=outfile)
             print(f"""{prefix}</details>""",file=outfile)
+        elif VIZ_CHOICE_RE.match(line):
+            print(VIZ_CHOICE_HTML,file=outfile)
         else:
             print(f"{line}", file=outfile)
 
