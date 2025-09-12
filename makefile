@@ -1,12 +1,18 @@
-all: png midi docs/index.html docs/music.js
-
+CHAPTERS := $(wildcard chapter*.html)
 INPUTS := $(wildcard music/*.ly)
+
+CHAPTERS_HTML := $(patsubst %.html,docs/%.html,$(CHAPTERS))
 PNG_OUTPUTS := $(patsubst music/%.ly,docs/%.cropped.png,$(INPUTS))
 MIDI_OUTPUTS:= $(patsubst music/%.ly,docs/%.midi,$(INPUTS))
 
 LILYPOND_OPTS := -dresolution=300 --png
 
-list:
+all: png midi docs/index.html docs/music.js $(CHAPTERS_HTML)
+
+list: list_html list_music
+list_html:
+	@echo $(CHAPTERS_HTML)
+list_music:
 	@echo $(INPUTS)
 png: $(PNG_OUTPUTS)
 midi: $(MIDI_OUTPUTS)
