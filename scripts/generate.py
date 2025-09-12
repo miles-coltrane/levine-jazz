@@ -18,9 +18,9 @@ FIGURE_RE = re.compile(r"""
        \s*
     }}$""", re.VERBOSE)
 
-VIZ_CHOICE_RE = re.compile(r"""^\s*{{viz-choice}}$""")
+CONTROLS_RE = re.compile(r"""^\s*{{controls}}$""")
 
-VIZ_CHOICE_HTML = r"""
+CONTROLS_HTML = r"""
     <form><fieldset><legend>Visualizer:</legend>
       <div>
         <input type="radio" id="viz-none" name="viz" value="none" onClick="toggleViz(null)" />
@@ -39,6 +39,8 @@ VIZ_CHOICE_HTML = r"""
         <label for="viz-staff">Staff</label>
       </div> -->
     </fieldset></form>
+    <button onClick="expandAllElements(true)">Expand all</button>
+    <button onClick="expandAllElements(false)">Collapse all</button>
 """
 
 SIZE = 50 # percent
@@ -75,8 +77,8 @@ def transmute(infile, outfile, indir):
             print(f"""{prefix}<midi-visualizer type="waterfall" id="{filename}-viz" />""", file=outfile);
             print(f"""{prefix}<p><midi-player id="{filename}-play" src="{midi_filename}" sound-font visualizer="#{filename}-viz" />""",file=outfile)
             print(f"""{prefix}</details>""",file=outfile)
-        elif VIZ_CHOICE_RE.match(line):
-            print(VIZ_CHOICE_HTML,file=outfile)
+        elif CONTROLS_RE.match(line):
+            print(CONTROLS_HTML,file=outfile)
         else:
             print(f"{line}", file=outfile)
 

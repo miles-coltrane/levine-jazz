@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <title>Chapter 1: Basic Theory</title>
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+    <script src="music.js"></script>
+  </head>
+  <body>
+<h1>Chapter 1: Basic Theory</h2>
+{{controls}}
+  <h2>Intervals</h2>
+<details><summary>Figure 1-1</summary>
+  <p><img src="./figure1-1.cropped.png" name="Figure 1-1" style="width: 1123.0px; height: 373.0px;"/>
+  <midi-visualizer type="waterfall" id="figure1-1-viz" />
+  <p><midi-player id="figure1-1-play" src="./figure1-1.midi" sound-font visualizer="#figure1-1-viz" />
+  </details>
+<details><summary>Ascending minor 2nd</summary>
+  <p><img src="./intervals1U.cropped.png" name="Ascending minor 2nd" style="width: 702.0px; height: 156.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals1U-viz" />
+  <p><midi-player id="intervals1U-play" src="./intervals1U.midi" sound-font visualizer="#intervals1U-viz" />
+  </details>
+<details><summary>Descending minor 2nd</summary>
+  <p><img src="./intervals1D.cropped.png" name="Descending minor 2nd" style="width: 562.5px; height: 141.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals1D-viz" />
+  <p><midi-player id="intervals1D-play" src="./intervals1D.midi" sound-font visualizer="#intervals1D-viz" />
+  </details>
+<details><summary>Ascending major 2nd</summary>
+  <p><img src="./intervals2U.cropped.png" name="Ascending major 2nd" style="width: 641.5px; height: 150.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals2U-viz" />
+  <p><midi-player id="intervals2U-play" src="./intervals2U.midi" sound-font visualizer="#intervals2U-viz" />
+  </details>
+<details><summary>Descending major 2nd</summary>
+  <p><img src="./intervals2D.cropped.png" name="Descending major 2nd" style="width: 410.5px; height: 148.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals2D-viz" />
+  <p><midi-player id="intervals2D-play" src="./intervals2D.midi" sound-font visualizer="#intervals2D-viz" />
+  </details>
+<details><summary>Ascending minor 3rd</summary>
+  <p><img src="./intervals3U.cropped.png" name="Ascending minor 3rd" style="width: 785.5px; height: 148.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals3U-viz" />
+  <p><midi-player id="intervals3U-play" src="./intervals3U.midi" sound-font visualizer="#intervals3U-viz" />
+  </details>
+<details><summary>Descending minor 3rd</summary>
+  <p><img src="./intervals3D.cropped.png" name="Descending minor 3rd" style="width: 658.5px; height: 152.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals3D-viz" />
+  <p><midi-player id="intervals3D-play" src="./intervals3D.midi" sound-font visualizer="#intervals3D-viz" />
+  </details>
+<details><summary>Ascending major 3rd</summary>
+  <p><img src="./intervals4U.cropped.png" name="Ascending major 3rd" style="width: 675.0px; height: 158.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals4U-viz" />
+  <p><midi-player id="intervals4U-play" src="./intervals4U.midi" sound-font visualizer="#intervals4U-viz" />
+  </details>
+<details><summary>Descending major 3rd</summary>
+  <p><img src="./intervals4D.cropped.png" name="Descending major 3rd" style="width: 433.5px; height: 152.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals4D-viz" />
+  <p><midi-player id="intervals4D-play" src="./intervals4D.midi" sound-font visualizer="#intervals4D-viz" />
+  </details>
+<details><summary>Ascending perfect 4th</summary>
+  <p><img src="./intervals5U.cropped.png" name="Ascending perfect 4th" style="width: 714.5px; height: 154.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals5U-viz" />
+  <p><midi-player id="intervals5U-play" src="./intervals5U.midi" sound-font visualizer="#intervals5U-viz" />
+  </details>
+<details><summary>Descending perfect 4th</summary>
+  <p><img src="./intervals5D.cropped.png" name="Descending perfect 4th" style="width: 575.0px; height: 152.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals5D-viz" />
+  <p><midi-player id="intervals5D-play" src="./intervals5D.midi" sound-font visualizer="#intervals5D-viz" />
+  </details>
+<details><summary>Ascending tritone</summary>
+  <p><img src="./intervals6U.cropped.png" name="Ascending tritone" style="width: 316.5px; height: 152.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals6U-viz" />
+  <p><midi-player id="intervals6U-play" src="./intervals6U.midi" sound-font visualizer="#intervals6U-viz" />
+  </details>
+<details><summary>Descending tritone</summary>
+  <p><img src="./intervals6D.cropped.png" name="Descending tritone" style="width: 669.0px; height: 152.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals6D-viz" />
+  <p><midi-player id="intervals6D-play" src="./intervals6D.midi" sound-font visualizer="#intervals6D-viz" />
+  </details>
+<details><summary>Ascending perfect 5th</summary>
+  <p><img src="./intervals7U.cropped.png" name="Ascending perfect 5th" style="width: 644.0px; height: 154.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals7U-viz" />
+  <p><midi-player id="intervals7U-play" src="./intervals7U.midi" sound-font visualizer="#intervals7U-viz" />
+  </details>
+<details><summary>Descending perfect 5th</summary>
+  <p><img src="./intervals7D.cropped.png" name="Descending perfect 5th" style="width: 487.5px; height: 150.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals7D-viz" />
+  <p><midi-player id="intervals7D-play" src="./intervals7D.midi" sound-font visualizer="#intervals7D-viz" />
+  </details>
+<details><summary>Ascending minor 6th</summary>
+  <p><img src="./intervals8U.cropped.png" name="Ascending minor 6th" style="width: 485.5px; height: 154.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals8U-viz" />
+  <p><midi-player id="intervals8U-play" src="./intervals8U.midi" sound-font visualizer="#intervals8U-viz" />
+  </details>
+<details><summary>Descending minor 6th</summary>
+  <p><img src="./intervals8D.cropped.png" name="Descending minor 6th" style="width: 531.5px; height: 169.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals8D-viz" />
+  <p><midi-player id="intervals8D-play" src="./intervals8D.midi" sound-font visualizer="#intervals8D-viz" />
+  </details>
+<details><summary>Ascending major 6th</summary>
+  <p><img src="./intervals9U.cropped.png" name="Ascending major 6th" style="width: 798.0px; height: 183.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals9U-viz" />
+  <p><midi-player id="intervals9U-play" src="./intervals9U.midi" sound-font visualizer="#intervals9U-viz" />
+  </details>
+<details><summary>Descending major 6th</summary>
+  <p><img src="./intervals9D.cropped.png" name="Descending major 6th" style="width: 414.5px; height: 150.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals9D-viz" />
+  <p><midi-player id="intervals9D-play" src="./intervals9D.midi" sound-font visualizer="#intervals9D-viz" />
+  </details>
+<details><summary>Ascending minor 7th</summary>
+  <p><img src="./intervals10U.cropped.png" name="Ascending minor 7th" style="width: 625.0px; height: 175.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals10U-viz" />
+  <p><midi-player id="intervals10U-play" src="./intervals10U.midi" sound-font visualizer="#intervals10U-viz" />
+  </details>
+<details><summary>Descending minor 7th</summary>
+  <p><img src="./intervals10D.cropped.png" name="Descending minor 7th" style="width: 656.5px; height: 177.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals10D-viz" />
+  <p><midi-player id="intervals10D-play" src="./intervals10D.midi" sound-font visualizer="#intervals10D-viz" />
+  </details>
+<details><summary>Ascending major 7th</summary>
+  <p><img src="./intervals11U.cropped.png" name="Ascending major 7th" style="width: 537.5px; height: 164.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals11U-viz" />
+  <p><midi-player id="intervals11U-play" src="./intervals11U.midi" sound-font visualizer="#intervals11U-viz" />
+  </details>
+<details><summary>Descending major 7th</summary>
+  <p><img src="./intervals11D.cropped.png" name="Descending major 7th" style="width: 569.0px; height: 158.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals11D-viz" />
+  <p><midi-player id="intervals11D-play" src="./intervals11D.midi" sound-font visualizer="#intervals11D-viz" />
+  </details>
+<details><summary>Ascending octave</summary>
+  <p><img src="./intervals12U.cropped.png" name="Ascending octave" style="width: 506.5px; height: 158.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals12U-viz" />
+  <p><midi-player id="intervals12U-play" src="./intervals12U.midi" sound-font visualizer="#intervals12U-viz" />
+  </details>
+<details><summary>Descending octave</summary>
+  <p><img src="./intervals12D.cropped.png" name="Descending octave" style="width: 735.5px; height: 160.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals12D-viz" />
+  <p><midi-player id="intervals12D-play" src="./intervals12D.midi" sound-font visualizer="#intervals12D-viz" />
+  </details>
+<details><summary>Ascending minor 9th</summary>
+  <p><img src="./intervals13U.cropped.png" name="Ascending minor 9th" style="width: 716.5px; height: 164.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals13U-viz" />
+  <p><midi-player id="intervals13U-play" src="./intervals13U.midi" sound-font visualizer="#intervals13U-viz" />
+  </details>
+<details><summary>Descending minor 9th</summary>
+  <p><img src="./intervals13D.cropped.png" name="Descending minor 9th" style="width: 654.0px; height: 171.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals13D-viz" />
+  <p><midi-player id="intervals13D-play" src="./intervals13D.midi" sound-font visualizer="#intervals13D-viz" />
+  </details>
+<details><summary>Ascending major 9th</summary>
+  <p><img src="./intervals14U.cropped.png" name="Ascending major 9th" style="width: 589.5px; height: 137.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals14U-viz" />
+  <p><midi-player id="intervals14U-play" src="./intervals14U.midi" sound-font visualizer="#intervals14U-viz" />
+  </details>
+<details><summary>Ascending major 10th</summary>
+  <p><img src="./intervals16U.cropped.png" name="Ascending major 10th" style="width: 594.0px; height: 141.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals16U-viz" />
+  <p><midi-player id="intervals16U-play" src="./intervals16U.midi" sound-font visualizer="#intervals16U-viz" />
+  </details>
+<details><summary>Descending 11th</summary>
+  <p><img src="./intervals17D.cropped.png" name="Descending 11th" style="width: 566.5px; height: 175.0px;"/>
+  <midi-visualizer type="waterfall" id="intervals17D-viz" />
+  <p><midi-player id="intervals17D-play" src="./intervals17D.midi" sound-font visualizer="#intervals17D-viz" />
+  </details>
+<details><summary>Descending major 13th</summary>
+  <p><img src="./intervals21D.cropped.png" name="Descending major 13th" style="width: 619.0px; height: 183.5px;"/>
+  <midi-visualizer type="waterfall" id="intervals21D-viz" />
+  <p><midi-player id="intervals21D-play" src="./intervals21D.midi" sound-font visualizer="#intervals21D-viz" />
+  </details>
+
+  <h2>Inverting Intervals</h2>
+<details><summary>Figure 1-2</summary>
+  <p><img src="./figure1-2.cropped.png" name="Figure 1-2" style="width: 250.0px; height: 106.5px;"/>
+  <midi-visualizer type="waterfall" id="figure1-2-viz" />
+  <p><midi-player id="figure1-2-play" src="./figure1-2.midi" sound-font visualizer="#figure1-2-viz" />
+  </details>
+<details><summary>Figure 1-3</summary>
+  <p><img src="./figure1-3.cropped.png" name="Figure 1-3" style="width: 248.0px; height: 127.0px;"/>
+  <midi-visualizer type="waterfall" id="figure1-3-viz" />
+  <p><midi-player id="figure1-3-play" src="./figure1-3.midi" sound-font visualizer="#figure1-3-viz" />
+  </details>
+<details><summary>Figure 1-4</summary>
+  <p><img src="./figure1-4.cropped.png" name="Figure 1-4" style="width: 262.5px; height: 133.5px;"/>
+  <midi-visualizer type="waterfall" id="figure1-4-viz" />
+  <p><midi-player id="figure1-4-play" src="./figure1-4.midi" sound-font visualizer="#figure1-4-viz" />
+  </details>
+<details><summary>Figure 1-5</summary>
+  <p><img src="./figure1-5.cropped.png" name="Figure 1-5" style="width: 219.0px; height: 102.0px;"/>
+  <midi-visualizer type="waterfall" id="figure1-5-viz" />
+  <p><midi-player id="figure1-5-play" src="./figure1-5.midi" sound-font visualizer="#figure1-5-viz" />
+  </details>
+
+  <h2>Triads</h2>
+<details><summary>Figure 1-6</summary>
+  <p><img src="./figure1-6.cropped.png" name="Figure 1-6" style="width: 577.0px; height: 127.0px;"/>
+  <midi-visualizer type="waterfall" id="figure1-6-viz" />
+  <p><midi-player id="figure1-6-play" src="./figure1-6.midi" sound-font visualizer="#figure1-6-viz" />
+  </details>
+<details><summary>Figure 1-7</summary>
+  <p><img src="./figure1-7.cropped.png" name="Figure 1-7" style="width: 1123.0px; height: 202.0px;"/>
+  <midi-visualizer type="waterfall" id="figure1-7-viz" />
+  <p><midi-player id="figure1-7-play" src="./figure1-7.midi" sound-font visualizer="#figure1-7-viz" />
+  </details>
