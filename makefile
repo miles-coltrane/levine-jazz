@@ -1,4 +1,4 @@
-all: png midi docs/index.html
+all: png midi docs/index.html docs/music.js
 
 INPUTS := $(wildcard music/*.ly)
 PNG_OUTPUTS := $(patsubst music/%.ly,docs/%.cropped.png,$(INPUTS))
@@ -22,6 +22,8 @@ watch:
 
 docs/%.html: %.html scripts/generate.py | docs
 	./scripts/generate.py --dir=docs --input=$< --output=$@
+docs/%.js: %.js | docs
+	cp $< $@
 docs/%.cropped.png: music/%.ly | docs
 	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm -f docs/$(basename $(notdir $<)).png
 docs/%.midi: music/%.ly | docs
