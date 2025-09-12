@@ -9,7 +9,8 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   \override Score.SpacingSpanner.spacing-increment = 2
-  \partial 4. [bf8 c cs] \bar "||"
+  \partial 4. <>[ bf8 c cs]
+  \bar "||"
   d e f a bf cs, d e |
   f a bf cs d e, f a |
   bf cs d e f4 a8 bf | \break
