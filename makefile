@@ -18,9 +18,9 @@ serve: all
 open:
 	open http://localhost:8000/
 watch:
-	fswatch -o contents.html music | xargs -n1 -I{} $(MAKE)
+	fswatch -o index.html music | xargs -n1 -I{} $(MAKE)
 
-docs/index.html: contents.html scripts/generate.py | docs
+docs/index.html: index.html scripts/generate.py | docs
 	./scripts/generate.py --dir=docs --input=$< --output=$@
 docs/%.cropped.png: music/%.ly | docs
 	lilypond $(LILYPOND_OPTS) --output=docs/ $< && rm -f docs/$(basename $(notdir $<)).png
