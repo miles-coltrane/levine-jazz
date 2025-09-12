@@ -9,7 +9,7 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   \partial 4.
-  d16' ef16  f8 f16 g16 |
+  d'16 ef16  f8 f16 g16 |
   gs8 gs16 as16  b8 b16 cs16  d8 d16 e16  f8 f16 g16 |
   af8 af16 g16  f8 f16 e16  d16 cs16 b16 d,16  f16 af16 g f
   \bar "||"
