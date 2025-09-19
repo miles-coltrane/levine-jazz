@@ -54,7 +54,21 @@ def png_size(filename):
     w, h = struct.unpack('>LL', data[16:24])
     return int(w), int(h)
 
-def transmute(infile, outfile, indir):
+def figure(outfile, indir, prefix, fullname, filename):
+    png_filename  = f"./{filename}.cropped.png"
+    midi_filename  = f"./{filename}.midi"
+    if indir:
+        w, h = png_size(f"{indir}/{png_filename}")
+        style = f"width: {w*SIZE/100}px; height: {h*SIZE/100}px;"
+    else:
+        style = f"width: {SIZE}%; height: auto;"
+    print(f"""<details><summary>{fullname}</summary>""",file=outfile)
+    print(f"""{prefix}<p><img src="{png_filename}" name="{fullname}" style="{style}"/>""", file=outfile);
+    print(f"""{prefix}<midi-visualizer type="waterfall" id="{filename}-viz" />""", file=outfile);
+    print(f"""{prefix}<p><midi-player id="{filename}-play" src="{midi_filename}" sound-font visualizer="#{filename}-viz" />""",file=outfile)
+    print(f"""{prefix}</details>""",file=outfile)
+
+def transmute(infilename, infile, outfile, indir):
     lineno = 0
     for line in infile:
         lineno += 1
@@ -66,18 +80,10 @@ def transmute(infile, outfile, indir):
             filename = m.group('filename')
             if not filename:
                 filename = fullname.lower().replace(" ", "")
-            png_filename  = f"./{filename}.cropped.png"
-            midi_filename  = f"./{filename}.midi"
-            if indir:
-                w, h = png_size(f"{indir}/{png_filename}")
-                style = f"width: {w*SIZE/100}px; height: {h*SIZE/100}px;"
-            else:
-                style = f"width: {SIZE}%; height: auto;"
-            print(f"""<details><summary>{fullname}</summary>""",file=outfile)
-            print(f"""{prefix}<p><img src="{png_filename}" name="{fullname}" style="{style}"/>""", file=outfile);
-            print(f"""{prefix}<midi-visualizer type="waterfall" id="{filename}-viz" />""", file=outfile);
-            print(f"""{prefix}<p><midi-player id="{filename}-play" src="{midi_filename}" sound-font visualizer="#{filename}-viz" />""",file=outfile)
-            print(f"""{prefix}</details>""",file=outfile)
+            try:
+                figure(outfile, indir, prefix, fullname, filename)
+            except Exception as e:
+                print(f"{infilename}:{lineno}: failed to process {filename}: {e}", file=sys.stderr)
         elif CONTROLS_RE.match(line):
             print(CONTROLS_HTML,file=outfile)
         else:
@@ -90,6 +96,7 @@ def usage():
     print("  -d <dir> / --dir <dir>      : directory holding images")
 
 def main(args):
+    infilename = "<stdin>"
     infile = sys.stdin
     outfile = sys.stdout
     indir = None
@@ -104,6 +111,7 @@ def main(args):
             usage()
             sys.exit()
         elif o in ("-i", "--input"):
+            infilename = a
             infile = open(a)
         elif o in ("-o", "--output"):
             outfile = open(a, "w")
@@ -111,7 +119,7 @@ def main(args):
             indir = a
         else:
             assert False, "unhandled option"
-    transmute(infile, outfile, indir)
+    transmute(infilename, infile, outfile, indir)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
