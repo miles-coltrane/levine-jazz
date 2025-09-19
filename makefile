@@ -24,7 +24,7 @@ serve: all
 open:
 	open http://localhost:8000/
 watch:
-	fswatch -o index.html music | xargs -n1 -I{} $(MAKE)
+	fswatch -o *.html music | xargs -n1 -I{} $(MAKE)
 
 docs/%.html: %.html scripts/generate.py | docs
 	./scripts/generate.py --dir=docs --input=$< --output=$@
