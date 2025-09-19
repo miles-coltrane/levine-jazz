@@ -6,6 +6,7 @@ theKey = c
 theSignature = 4/4
 theChords = \chordmode {}
 theTreble = \relative {
+  \override Timing.TimeSignature.stencil = ##f
   <c' ef gf>1 |
   <cs e g> |
   <ds fs a> |
