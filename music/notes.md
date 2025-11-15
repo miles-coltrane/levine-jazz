@@ -13,6 +13,7 @@
   - `:min7.5-` for half-diminished
   - `:maj7.3-` for minor-major
   - `:maj7.11+` for Δ♯4
+  - `:alt` for 7alt
 * `\tuplet 3/2 { a b c}` for tuplets
 * append `\noBeam` to get a flag not a beam
 * prepend `\tieUp` to adjust direction of tie
