@@ -1,4 +1,5 @@
-% Dual staff with lyrics below bass staff
+% Dual staff with lyrics below bass staff, ragged-last
+% Lyrics must have timings to match notes
 \score {
   \midi {
     \tempo 4=\theTempo
