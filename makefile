@@ -46,4 +46,7 @@ clean_midi:
 distclean:
 	rm -rf docs
 
+deps:
+	cargo install https@1.13.2
+
 .PHONY: all png midi list clean
