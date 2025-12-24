@@ -31,3 +31,34 @@
   \set fingeringOrientations = #'(right)
   ```
 * to force display of a flat/sharp sign even when it would normally be assumed, add `!` after the note
+
+# Layout Files
+
+## General
+
+* `include/dual.ly`: bass+treble
+  * `include/dual-aligned.ly` : bass+treble, with final clef right-aligned
+  * `include/dual+lyrics.ly`: text below bass clef, synced with bass clef
+  * `include/dual+lyrics2.ly`: text below bass clef, with durations
+  * `include/dual+lyrics3.ly`: text below treble clef, synced with treble clef
+*` include/treble.ly`: just treble clef
+  * `include/treble-aligned.ly`: just treble clef, with final clef right-aligned
+  * `include/treble-lyrics.ly`: just treble clef, with text underneath
+  * `include/treble-lyrics-aligned.ly`: as above, final clef right-aligned
+* `include/scale.ly`: single treble clef with scale name to left, text under
+  * `include/scale-lyrics.ly`: as above, with synced text underneath
+  * `include/scale-nochords.ly`: single treble clef with scale name to left, no chords
+  * `include/scale-nochords2.ly`: as above, less spacing on final line
+* `include/bass.ly`: just bass clef
+* `include/modes.ly`: modes of a scale
+  * `include/modes+.ly`: modes of a scale with one extra
+* `include/prologue.ly`: standard prologue, sets English notation and cropped output then includes:
+   * `chords.ly`: chord definitions for Jazz
+   * `thirds.ly`: text markups for interval names
+   * `notes.ly`: text markups for notes
+   * `recolor.ly`: utility to change colours
+
+## Specials
+
+* `include/box-head.ly`: utility to put boxes around note heads
+* `include/slash.ly`: start/stop slashes
