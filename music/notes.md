@@ -41,6 +41,7 @@
   * `include/dual+lyrics.ly`: text below bass clef, synced with bass clef
   * `include/dual+lyrics2.ly`: text below bass clef, with durations
   * `include/dual+lyrics3.ly`: text below treble clef, synced with treble clef
+  * `include/dual+lyrics4.ly`: text below treble clef, with durations
 *` include/treble.ly`: just treble clef
   * `include/treble-aligned.ly`: just treble clef, with final clef right-aligned
   * `include/treble-lyrics.ly`: just treble clef, with text underneath
