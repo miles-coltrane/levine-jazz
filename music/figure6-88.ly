@@ -111,7 +111,7 @@ theBass = {
   s1 \bar "||" s1 | s1 |
   s1 | s1 | r8 ef8 d4 df'4 bf8 df8 |
   c'8 cf'8 bf4 e8 a gs a |
-  ef8 df c bf, a c e g | d f a c' s2 \bar "||"
+  ef8 df c bf, a, c e g | d f a c' s2 \bar "||"
 
   \pageBreak
 
@@ -140,7 +140,7 @@ theBass = {
   \pageBreak
 
   s1 | s1 | s1 |
-  s1 | s1 | b8 d4 a8 af e ef df |
+  s1 | s1 | bf8 d4 a8 af e ef df |
   c d e g d4 r4 | d8 f a c' bf d f a | af e ef df \tuplet 3/2 {c d e} \tuplet 3/2 {f g af} |
   \tuplet 3/2 {a af gf} \tuplet 3/2 {f e ef} \tuplet 3/2 {d f c'} \tuplet 3/2 {cf' bf d} |
     \tuplet 3/2 {f a af} \tuplet 3/2 {g g a} \tuplet 3/2 {bf c' d'} s4 |
@@ -266,7 +266,6 @@ theLyrics = \lyricmode {
   \layout {
     \context {
       \Score
-      \omit BarNumber
     }
     indent = 0\mm
   }
@@ -294,6 +293,7 @@ theLyrics = \lyricmode {
       }
     >>
     \new Staff {
+      \key \theKey \major
       \clef bass {
         \skip \f % spacer to set voice volume
         \theBass
