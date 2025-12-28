@@ -28,6 +28,7 @@
       }
     }
     \new Staff {
+      \key \theKey \major
       \clef bass {
         \skip \f % spacer to set voice volume
         \theBass
