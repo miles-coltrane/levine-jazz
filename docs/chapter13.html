@@ -8,6 +8,27 @@
 
 <h1>Chapter 13: Basic Reharmonization</h1>
 
+    <form><fieldset><legend>Visualizer:</legend>
+      <div>
+        <input type="radio" id="viz-none" name="viz" value="none" onClick="toggleViz(null)" />
+        <label for="viz-none">None</label>
+      </div>
+      <div>
+        <input type="radio" id="viz-waterfall" name="viz" value="waterfall" onClick="toggleViz('waterfall')" checked />
+        <label for="viz-waterfall">Waterfall</label>
+      </div>
+      <div>
+        <input type="radio" id="viz-piano-roll" name="viz" value="piano-roll" onClick="toggleViz('piano-roll')" />
+        <label for="viz-piano-roll">Piano Roll</label>
+      </div>
+      <!-- <div>
+        <input type="radio" id="viz-staff" name="viz" value="staff" onClick="toggleViz('staff')" />
+        <label for="viz-staff">Staff</label>
+      </div> -->
+    </fieldset></form>
+    <a href="index.html">Back to Top</a>
+    <button onClick="expandAllElements(true)">Expand all</button>
+    <button onClick="expandAllElements(false)">Collapse all</button>
 
 
   <h2>Reharmonizing V as II-V</h2>
