@@ -1,10 +1,9 @@
 startSlash = {
   \improvisationOn
-  \override NoteHead.style = #'slash
+  \set Staff.midiMaximumVolume = #0
   \omit Stem
 }
 stopSlash = {
   \improvisationOff
-  \revert NoteHead.style
   \undo \omit Stem
 }

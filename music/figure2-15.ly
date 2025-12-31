@@ -31,9 +31,9 @@
       <<
         \clef treble {
           \new Voice \with { \consists Pitch_squash_engraver } {
-            % TODO: stop display of second slash from the chord names
+            \override Score.SpacingSpanner.spacing-increment = 2
             \startSlash
-            4 4 4 4 |
+            b'4 4 4 4 |
             4 4 4 4 |
             4 4 4 4 |
             4 4 4 4 \bar "||"

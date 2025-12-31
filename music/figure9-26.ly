@@ -1,5 +1,6 @@
 \version "2.24.4"
 \include "include/prologue.ly"
+\include "include/slash.ly"
 
 theTempo = 120
 theKey = c
@@ -11,13 +12,12 @@ theChords = \chordmode {
   b1:maj7 | f2:min7 bf:7 | ef1:maj7 | cs2:min7 fs:7
 }
 theTreble = \relative {
-  \improvisationOn \omit Stem
-  \set Staff.midiMaximumVolume = #0
+  \startSlash
   b'4 4 4 4 | 4 4 4 4 | 4 4 4 4 | 4 4 4 4 | \break
   4 4 4 4 | 4 4 4 4 | 4 4 4 4 | 4 4 4 4 | \break
   4 4 4 4 | 4 4 4 4 | 4 4 4 4 | 4 4 4 4 | \break
   4 4 4 4 | 4 4 4 4 | 4 4 4 4 | 4 4 4 4
-  \improvisationOff \undo \omit Stem
+  \stopSlash
   \bar "|."
 }
 theLyrics = \lyricmode {
