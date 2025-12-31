@@ -27,7 +27,7 @@ theTreble = \relative {
   <c ef af>2 <d g bf>2 |
   <c f bf>1 |
   <b e b'>2 <as ds as'>2
-  \bar "||"
+  \bar "|."
 }
 theBass = {
   <b, as>2 <d fs c'>2 | g, <bf, af> | <ef g>1 | <a, g>2 <d fs> | \break
