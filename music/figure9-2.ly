@@ -36,7 +36,7 @@
          \once\override HorizontalBracketText.text = "whole step"
          d'1\startGroup
          \once\hide NoteHead \once\hide Stem
-         d'128\stopGroup
+         e'128\stopGroup
 
          \override HorizontalBracket.direction = #UP
          \once\override HorizontalBracketText.text = "minor 3rd"

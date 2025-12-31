@@ -25,6 +25,10 @@
   ```
   \override Timing.TimeSignature.stencil = ##f
   ```
+* for lyric alignment use:
+  ```
+  \override LyricText.self-alignment-X = #LEFT
+  ```
 * for fingering annotation locations; single notes need to be put in a
   chord, as does the fingering (e.g. `<c\third>1`), then:
   ```
