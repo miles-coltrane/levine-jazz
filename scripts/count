@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+DONE=$(ls music/figure*ly music/intervals*ly | wc -l)
+DONE=$(($DONE + 0))
+TODO=$(grep figure chapter*html | wc -l)
+TODO=$(($TODO + 0))
+PERCENT=$((100*$DONE / $TODO))
+echo "Done $DONE of $TODO ($PERCENT%)"
