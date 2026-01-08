@@ -42,6 +42,7 @@
 
 * `include/dual.ly`: bass+treble
   * `include/dual-aligned.ly` : bass+treble, with final clef right-aligned
+  * `include/dual-volta.ly` : bass+treble, with final clef right-aligned and with alternative voltas expanded
   * `include/dual+lyrics.ly`: text below bass clef, synced with bass clef
   * `include/dual+lyrics2.ly`: text below bass clef, with durations
   * `include/dual+lyrics3.ly`: text below treble clef, synced with treble clef
