@@ -5,5 +5,6 @@ fifth = \finger\markup{\override #'(font-name . "sans")"5th"}
 sixth = \finger\markup{\override #'(font-name . "sans")"6th"}
 seventh = \finger\markup{\override #'(font-name . "sans")"7th"}
 ninth = \finger\markup{\override #'(font-name . "sans")"9th"}
+flatnine = \finger\markup{\override #'(font-name . "sans")"♭9"}
 eleventh = \finger\markup{\override #'(font-name . "sans")"11th"}
 thirteenth = \finger\markup{\override #'(font-name . "sans")"13th"}
