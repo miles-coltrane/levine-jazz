@@ -5,4 +5,5 @@ DONE=$(($DONE + 0))
 TODO=$(grep figure chapter*html | wc -l)
 TODO=$(($TODO + 0))
 PERCENT=$((100*$DONE / $TODO))
-echo "Done $DONE of $TODO ($PERCENT%)"
+LEFT=$(($TODO - $DONE))
+echo "Done $DONE of $TODO ($PERCENT%), $LEFT to do"
