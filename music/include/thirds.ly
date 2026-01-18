@@ -1,6 +1,7 @@
 root = \finger\markup{\override #'(font-name . "sans")"root"}
 third = \finger\markup{\override #'(font-name . "sans")"3rd"}
 fourth = \finger\markup{\override #'(font-name . "sans")"4th"}
+sharpfour = \finger\markup{\override #'(font-name . "sans")"♯4"}
 fifth = \finger\markup{\override #'(font-name . "sans")"5th"}
 sharpfive = \finger\markup{\override #'(font-name . "sans")"♯5"}
 sixth = \finger\markup{\override #'(font-name . "sans")"6th"}
