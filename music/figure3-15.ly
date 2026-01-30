@@ -4,7 +4,7 @@
 \include "include/chords.ly"
 \score {
   \midi {
-    \tempo 4=120
+    \tempo 4=135
   }
   \layout {
     \context {

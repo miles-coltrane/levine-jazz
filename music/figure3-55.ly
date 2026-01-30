@@ -4,7 +4,7 @@
 \include "include/alt.ly"
 \score {
   \midi {
-    \tempo 4=130
+    \tempo 4=60
   }
   \layout {
     \context {
@@ -16,6 +16,7 @@
   }
   {
     \new Staff {
+      \set Staff.midiInstrument = "trumpet"
       \key c \major
       \numericTimeSignature
       \time 4/4

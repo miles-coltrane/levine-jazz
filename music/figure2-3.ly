@@ -4,7 +4,7 @@
 \include "include/alt.ly"
 \score {
   \midi {
-    \tempo 4=120
+    \tempo 4=280
   }
   \layout {
     \context {
