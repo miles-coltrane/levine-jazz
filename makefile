@@ -49,6 +49,6 @@ distclean:
 deps:
 	cargo install https@1.13.2
 count:
-	@scripts/count
+	@scripts/count *html
 
 .PHONY: all png midi list clean

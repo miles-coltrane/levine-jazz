@@ -1,9 +1,79 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python
+import getopt
+import pathlib
+import re
+import struct
+import sys
 
-DONE=$(ls music/figure*ly music/intervals*ly | wc -l)
-DONE=$(($DONE + 0))
-TODO=$(grep figure chapter*html | wc -l)
-TODO=$(($TODO + 0))
-PERCENT=$((100*$DONE / $TODO))
-LEFT=$(($TODO - $DONE))
-echo "Done $DONE of $TODO ($PERCENT%), $LEFT to do"
+FIGURE_RE = re.compile(r"""
+    ^(?P<ws>\s*)
+    {{
+       figure:
+       \s*
+       "(?P<name>[^"]+)"
+       \s*
+       (
+          file:
+          (?P<filename>[^}]+)
+       )?
+       \s*
+    }}$""", re.VERBOSE)
+
+def count(filename, indir):
+    figcount = 0
+    midicount = 0
+    lineno = 0
+    infile = open(filename)
+    for line in infile:
+        lineno += 1
+        line = line.rstrip()
+        m = FIGURE_RE.match(line)
+        if not m:
+            continue
+        fullname = m.group('name')
+        figname = m.group('filename')
+        if not figname:
+            figname = fullname.lower().replace(" ", "")
+        figcount += 1
+        midifile = pathlib.Path(f"{indir}/{figname}.midi")
+        if midifile.is_file():
+            midicount += 1
+    return (midicount, figcount)
+
+def usage():
+    print("count [options] infile.html [infile2.html ...]")
+    print("  -d <dir> / --dir <dir>      : directory holding images (default \"docs\")")
+    print("  -v / --verbose              : show detailed output")
+
+def main(args):
+    indir = "docs"
+    verbose = False
+    try:
+        opts, args = getopt.getopt(args, "hd:v", ["help", "dir=", "verbose"])
+    except getopt.GetoptError as err:
+        print(err)  # will print something like "option -a not recognized"
+        usage()
+        sys.exit(2)
+    for o, a in opts:
+        if o in ("-h", "--help"):
+            usage()
+            sys.exit()
+        elif o in ("-d", "--dir"):
+            indir = a
+        elif o in ("-v", "--verbose"):
+            verbose = True
+        else:
+            assert False, "unhandled option"
+
+    figcount = 0
+    midicount = 0
+    for arg in args:
+        (m, n) = count(arg, indir)
+        midicount += m
+        figcount += n
+        if verbose or n != m:
+            print(f"  {arg}: done {m} of {n} ({m/n:.1%}), {n-m} to do")
+    print(f"Done {midicount} of {figcount} ({midicount/figcount:.1%}), {figcount - midicount} to do")
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
