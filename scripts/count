@@ -19,7 +19,7 @@ FIGURE_RE = re.compile(r"""
        \s*
     }}$""", re.VERBOSE)
 
-def count(filename, indir):
+def count(filename, indir, missing):
     figcount = 0
     midicount = 0
     lineno = 0
@@ -38,18 +38,22 @@ def count(filename, indir):
         midifile = pathlib.Path(f"{indir}/{figname}.midi")
         if midifile.is_file():
             midicount += 1
+        elif missing:
+            print(f"    {figname} not found")
     return (midicount, figcount)
 
 def usage():
     print("count [options] infile.html [infile2.html ...]")
     print("  -d <dir> / --dir <dir>      : directory holding images (default \"docs\")")
     print("  -v / --verbose              : show detailed output")
+    print("  -f / --files e              : show missing files")
 
 def main(args):
     indir = "docs"
     verbose = False
+    missing = False
     try:
-        opts, args = getopt.getopt(args, "hd:v", ["help", "dir=", "verbose"])
+        opts, args = getopt.getopt(args, "hd:vf", ["help", "dir=", "verbose", "files"])
     except getopt.GetoptError as err:
         print(err)  # will print something like "option -a not recognized"
         usage()
@@ -62,16 +66,18 @@ def main(args):
             indir = a
         elif o in ("-v", "--verbose"):
             verbose = True
+        elif o in ("-f", "--files"):
+            missing = True
         else:
             assert False, "unhandled option"
 
     figcount = 0
     midicount = 0
     for arg in args:
-        (m, n) = count(arg, indir)
+        (m, n) = count(arg, indir, missing)
         midicount += m
         figcount += n
-        if verbose or n != m:
+        if (verbose or n != m) and n != 0:
             print(f"  {arg}: done {m} of {n} ({m/n:.1%}), {n-m} to do")
     print(f"Done {midicount} of {figcount} ({midicount/figcount:.1%}), {figcount - midicount} to do")
 
