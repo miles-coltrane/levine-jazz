@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+% Stella By Starlight, Miles Davis, Complete 1964 Concert
 \score {
   \midi {
     \tempo 4=130

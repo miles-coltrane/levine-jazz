@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Hocus Pocus, Lee Morgan, The Sidewinder
 theTempo = 190
 theKey = c
 theSignature = 4/4

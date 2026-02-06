@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Yesterday, Lee Morgan, Delightfulee
 theTempo = 100
 theKey = c
 theSignature = 4/4

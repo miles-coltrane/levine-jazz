@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+% What's New, Bob Haggart
 \score {
   \midi {
     \tempo 4=100

@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Lynn's Tune, Booker Ervin, Back From The Gig
 theTempo = 125
 theKey = c
 theSignature = 4/4

@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Search For Peace, McCoy Tyner, The Real McCoy
 theTempo = 65
 theKey = c
 theSignature = 4/4

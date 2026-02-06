@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+% Giant Steps, John Coltrane, Giant Steps
 \score {
   \midi {
     \tempo 4=280

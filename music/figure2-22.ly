@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% I Got Rhythm, George Gershwin
 theTempo = 180
 theKey = c
 theSignature = 4/4

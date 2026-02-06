@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Infant Eyes, Wayne Shorter, Speak No Evil
 theTempo = 75
 theKey = c
 theSignature = 4/4

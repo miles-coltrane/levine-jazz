@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Golden Lotus, Kenny Barron, Golden Lotuw
 theTempo = 160
 theKey = c
 theSignature = 4/4

@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/chords.ly"
+% Black Narcissus, Joe Henderson, Power To The People
 \score {
   \midi {
     \tempo 4=135

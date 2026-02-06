@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Some Other Time, Bill Evans, Bill Evans and Tony Bennett
 theTempo = 60
 theKey = c
 theSignature = 4/4

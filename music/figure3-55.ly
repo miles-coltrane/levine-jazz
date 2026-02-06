@@ -2,6 +2,7 @@
 \language "english"
 #(ly:set-option 'crop #t)
 \include "include/alt.ly"
+% Flamenco Sketches, Miles Davis, Kind of Blue
 \score {
   \midi {
     \tempo 4=60

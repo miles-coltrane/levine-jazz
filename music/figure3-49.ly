@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Penelope, Wayne Shorter, Etcetera
 theTempo = 175
 theKey = c
 theSignature = 3/4

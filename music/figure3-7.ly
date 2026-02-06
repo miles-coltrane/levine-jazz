@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Self-Portrait in Three Colors, Charles Mingus, Mingus Ah Um
 theTempo = 110
 theKey = ef
 theSignature = 4/4

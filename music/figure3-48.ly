@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% After The Rain, John Coltrane, Impressions
 theTempo = 120
 theKey = c
 theSignature = 4/4

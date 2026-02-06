@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Young And Foolish, Cedar Walton
 theTempo = 140
 theKey = c
 theSignature = 4/4

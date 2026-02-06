@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Naima, John Coltrane, Giant Steps
 theTempo = 60
 theKey = c
 theSignature = 4/4
