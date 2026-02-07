@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Old Devil Moon, Bobby Hutcherson, Solo/Quartet
 theTempo = 120
 theKey = c
 theSignature = 4/4

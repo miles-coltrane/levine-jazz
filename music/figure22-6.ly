@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 140
+% Ojos De Rojo, Cedar Walton, Eastern Rebellion 2
+theTempo = 210
 theKey = c
 theSignature = 4/4
 theName = \markup{ "melody" }

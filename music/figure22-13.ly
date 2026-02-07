@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 140
+% Un Poco Loco, Bud Powell, The Amazing Bud Powell
+theTempo = 250
 theKey = c
 theSignature = 4/4
 theName = \markup\left-column{ "Bud's" "melody" }

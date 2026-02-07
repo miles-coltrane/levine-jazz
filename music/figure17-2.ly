@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% My Little Brown Book, John Coltrane & Duke Ellington
 theTempo = 140
 theKey = bf
 theSignature = 4/4

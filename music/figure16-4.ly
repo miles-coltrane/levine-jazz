@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Spring Is Here, Kenny Barron, Maybeck Recital Hall Series
 theTempo = 120
 theKey = g
 theSignature = 4/4

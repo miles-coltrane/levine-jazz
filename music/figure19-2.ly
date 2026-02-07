@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% What's New, Bob Haggart
 theTempo = 120
 theKey = c
 theSignature = 4/4
@@ -55,7 +56,7 @@ trebleC = {
 
 chordsC = \chordmode {
   f1:maj7 | ef2:min7 af2:7 |
-  df1:maj7 | g2:min7.5- c2:7 | f1:min g2:min7.5- | c2:alt |
+  df1:maj7 | g2:min7.5- c2:7 | f1:min | g2:min7.5- c2:alt |
   f1:maj7 | d2:min7.5- g2:7.9-
 }
 

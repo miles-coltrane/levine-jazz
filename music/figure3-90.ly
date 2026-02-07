@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Little Girl Blue, Richard Rodgers
 theTempo = 120
 theKey = c
 theSignature = 4/4

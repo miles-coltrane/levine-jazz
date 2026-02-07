@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% What's New, Bob Haggart
 theTempo = 120
 theKey = c
 theSignature = 4/4

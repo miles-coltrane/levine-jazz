@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% I Hear A Rhapsody, Fragos, Baker & Gasparre
 theTempo = 120
 theKey = ef
 theSignature = 4/4
@@ -111,7 +112,7 @@ trebleC = {
       <fs c'>2 <a bf>2 |
       <g bf>2 <fs a>2 |
       s4 <g c'>2. |
-      <c' d'>1 | \breal
+      <c' d'>1 | \break
       f'1 |
       s4 <b e'>2.
     }

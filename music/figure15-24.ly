@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Body And Soul, John Coltrane, Coltrane's Sound
+theTempo = 145
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

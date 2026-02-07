@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 140
+% One's Own Room, Mulgrew Miller
+theTempo = 180
 theKey = c
 theSignature = 4/4
 theName = \markup{ "melody" }

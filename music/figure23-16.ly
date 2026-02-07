@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Compensation, Joe Lovano, Tones, Shapes and Colors
+theTempo = 140
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

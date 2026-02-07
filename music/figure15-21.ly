@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% The Night Has A Thousand Eyes, John Coltrane, Coltrane's Sound
+theTempo = 220
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

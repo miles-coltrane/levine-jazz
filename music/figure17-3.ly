@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Beatrice, Sam Rivers, Fuchsia Swing Song
 theTempo = 120
 theKey = f
 theSignature = 4/4
