@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Moment's Notice, John Coltrane, Blue Train
+theTempo = 230
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

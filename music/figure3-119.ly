@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Here's That Rainy Day, Jimmy Van Heusen
+theTempo = 70
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Mirror, Mirror, Joe Henderson,  Mirror, Mirror
+theTempo = 125
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {
