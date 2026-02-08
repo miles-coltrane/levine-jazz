@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Green Dolphin Street, Bronislau Kaper
 theTempo = 180
 theKey = c
 theSignature = 4/4
