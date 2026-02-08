@@ -1,9 +1,10 @@
 \version "2.24.4"
 \language "english"
 #(ly:set-option 'crop #t)
+% Gaslight, Duke Pearson, Sweet Honey Bee
 \score {
   \midi {
-    \tempo 4=120
+    \tempo 4=110
   }
   \layout {
     \context {

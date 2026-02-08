@@ -1,6 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Skylark, Kenny Barron, Maybeck Recital Hall Series
+theTempo = 70
 theTempo = 120
 theKey = c
 theSignature = 4/4

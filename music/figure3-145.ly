@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Our Man Higgins, Lee Morgan, Cornbread
+theTempo = 240
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
