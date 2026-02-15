@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Four, Mulgrew Miller, From Day To Day
+theTempo = 280
 theKey = ef
 theSignature = 4/4
 theChords = \chordmode {

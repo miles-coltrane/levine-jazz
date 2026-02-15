@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Maiden Voyage, Herbie Hancock, Maiden Voyage
 theTempo = 120
 theKey = c
 theSignature = 4/4

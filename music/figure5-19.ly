@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Four, Miles Davis, Workin'
+theTempo = 210
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

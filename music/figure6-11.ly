@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Stella By Starlight, Victor Young
 theTempo = 120
 theKey = c
 theSignature = 8/4

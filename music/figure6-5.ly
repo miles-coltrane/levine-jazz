@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Lady Day, Wayne Shorter, The Soothsayer
+theTempo = 60
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

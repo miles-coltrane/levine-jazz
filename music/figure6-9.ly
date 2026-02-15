@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 150
+% Hotter Than That, Louis Armstrong, Hot Fives & Hot Sevens
+theTempo = 205
 theKey = ef
 theSignature = 4/4
 theChords = \chordmode {
