@@ -1,7 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-% The Big Push, Wayne Shorter The Soothsayer
+% The Big Push, Wayne Shorter, The Soothsayer
 theTempo = 160
 theKey = c
 theSignature = 4/4

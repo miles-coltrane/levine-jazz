@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% All Of You, Miles Davis, My Funny Valentine 1964
+theTempo = 190
 theKey = ef
 theSignature = 4/4
 theChords = \chordmode {

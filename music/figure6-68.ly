@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% The Big Push, Wayne Shorter, The Soothsayer
+theTempo = 160
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

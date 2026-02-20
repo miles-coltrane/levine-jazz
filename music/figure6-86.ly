@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Pretty Eyes, Horace Silver, The Cape Verdean Blues
+theTempo = 155
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {
