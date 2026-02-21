@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% What The World Needs Now Is Love, Burt Bacharach
+theTempo = 105
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {
