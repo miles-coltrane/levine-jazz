@@ -15,7 +15,7 @@ theTreble = {
       ef''4 df''4 <d' g' b'>4 <cs' fs' a'>4 |
       cs''4. c''16 b'16 as'4. fs'16 gs'16 |
       f'2. fs'16 d'8. | \break
-      f'4~ \tuplet 3/2 {df'8 ef'8 f'8} <f' af'>4 <e' af'>4
+      f'4 \tuplet 3/2 {df'8 ef'8 f'8} <f' af'>4 <e' af'>4
     }
     \new Voice {\voiceTwo
       <ef' af'>2 s2 |

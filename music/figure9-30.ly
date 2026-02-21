@@ -12,7 +12,7 @@ theTreble = \relative {
   \override Score.SpacingSpanner.spacing-increment = 1.3
   \partial 2
   \tuplet 3/2 {a'16 g e} d8 \tuplet 3/2 {a'16 g e} d8 |
-  [ \tuplet 5/4 {a'16 g e d b~} ]
+  \tuplet 5/4 {a'16 g e d b~}
   b16 e16~ \tuplet 3/2 {e16 d b}  a2
   \bar "||"
 }

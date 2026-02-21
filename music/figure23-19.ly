@@ -19,7 +19,7 @@ theTreble = \relative {
     bf8 df8 \tuplet 3/2 {g,16 bf16 df16}
   }
   \tupletDown
-  \tuplet 6/2 {[g16 bf df bf g f]}
+  \tuplet 6/4 {g16 bf df bf g f}
   \bar "||"
 }
 

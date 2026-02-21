@@ -19,8 +19,7 @@ theTreble = {
 theBass = {
   c1~ |
   c1 |
-  r8 <d~ fs~ c'~>8 |
-  <d~ fs~ c'~>2. |
+  r8 <d~ fs~ c'~>8 <d~ fs~ c'~>2. |
   <d fs c'>1 |
   d1
   \bar "||"

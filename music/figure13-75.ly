@@ -12,7 +12,7 @@ theTreble = {
   \set fingeringOrientations = #'(right)
   <<
     { \stemUp <ef''~\sharpfive>1 | ef''4 ef''4 ef''4 d''4 }
-    \new Voice { \tieDown <f'~ b'~>1 | <f' b'>1 }
+    \new Voice { \voiceTwo \tieDown <f'~ b'~>1 | <f' b'>1 }
   >> |
   <ef' bf' f''>1
   \bar "||"

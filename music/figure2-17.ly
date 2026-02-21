@@ -8,6 +8,7 @@ theChords = \chordmode {
   d2:min7 g:7 | c1:maj7
 }
 theTreble = {
+  \override Score.SpacingSpanner.spacing-increment = 4
   \override Fingering.staff-padding = #'()
   <<
     {

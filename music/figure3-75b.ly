@@ -10,7 +10,7 @@ theChords = \chordmode {
 theTreble = \relative {
   \override Timing.TimeSignature.stencil = ##f
   \override Score.SpacingSpanner.spacing-increment = 3
-  r2 \stemUp [fs'8 g a b] \stemDown[ cs ds_\markup\center-align{"6th"} e fs^\markup\right-align{"second mode, E melodic minor"}]
+  r2 \stemUp fs'8[ g a b] \stemDown cs ds_\markup\center-align{"6th"} e fs^\markup\right-align{"second mode, E melodic minor"}
   \bar "||"
 }
 theBass = {

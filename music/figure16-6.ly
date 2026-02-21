@@ -252,7 +252,7 @@ expandedOtherBass = {
       }
     }
     \new Staff {
-      \set Staff.midiInstrument = "bass"
+      \set Staff.midiInstrument = "acoustic bass"
       \key \theKey \major
       \clef bass {
         \skip \f % spacer to set voice volume
@@ -334,7 +334,7 @@ expandedOtherBass = {
       \theChords
     }
     \new Staff {
-      \set Score.markFormatter = #format-mark-box-letters
+      \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
       \set Score.barNumberVisibility = #first-bar-number-invisible-and-no-parenthesized-bar-numbers
       \override Score.BarNumber.break-visibility = ##(#f #t #t)
       \override Score.SpacingSpanner.spacing-increment = 3.4

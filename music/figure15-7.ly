@@ -11,8 +11,9 @@ theTreble = {
   \override Score.SpacingSpanner.spacing-increment = 2
   \partial 2 as'4 as'4
   \bar "||"
+  \tieUp
   <ds' as'~>1 |
-  <d as>2 \tuplet 3/2 {af'4 g'4 fs'4} |
+  <d' as'>2 \tuplet 3/2 {af'4 g'4 fs'4} |
   <d' g'>1
   \bar "||"
 }

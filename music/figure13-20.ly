@@ -14,7 +14,7 @@ theTreble = \relative {
   \bar "||"
   af,4 r8 c4 ef4 c8 |
   df4 c8 bf8 a8 c8 bf8 gf8 |
-  f eg d c bf g af bf | \break
+  f ef d c bf g af bf | \break
   b cs d fs c b gs fs | bf4
   \bar "||"
 }

@@ -6,7 +6,7 @@ theKey = c
 theSignature = 4/4
 theChords = \chordmode {
   ef4 gf4:maj7 a4:maj7.11+ af4:maj7 |
-  gf4:maj7 e4:maj7 | df2:6.9
+  gf4:maj7 e4:maj7 df2:6.9
 }
 theTreble = {
   \override Score.SpacingSpanner.spacing-increment = 2.5

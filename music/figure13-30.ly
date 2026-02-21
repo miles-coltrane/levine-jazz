@@ -18,7 +18,7 @@ theTreble = \relative {
 }
 theBass = {
   \partial 4 r4 |
-  d,1 | e,2 | a,2
+  d,1 | e,2 a,2
   \bar "||"
 }
 

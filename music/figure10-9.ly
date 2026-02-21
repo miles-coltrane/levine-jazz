@@ -6,7 +6,7 @@ theKey = c
 theSignature = 4/4
 theChords = \chordmode {
   f1:maj7 | e2:min7.5- a2:7.9- | d2:min7 df2:7 | c2:min7 f2:7 | bf1:7 | bf2:min7 ef2:7 |
-  a2:min7 d2:7 | af2:min7 df2:7 | g1:7 | c1:7 | f2 d2:7 | g2:min7 | c2:7
+  a2:min7 d2:7 | af2:min7 df2:7 | g1:7 | c1:7 | f2 d2:7 | g2:min7 c2:7
 }
 theTreble = \relative {
   <e' a c>1 |

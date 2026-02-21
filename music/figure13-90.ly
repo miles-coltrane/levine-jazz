@@ -11,7 +11,7 @@ theTreble = {
   \override Score.SpacingSpanner.spacing-increment = 2
   <<
     {e''1 | f''4\rest d''4 a'4 g'4}
-    \new Voice {\stemDown <g' c''>2 fs'2 | <f' bf'>2 e'2}
+    \new Voice {\voiceTwo \stemDown <g' c''>2 fs'2 | <f' bf'>2 e'2}
   >> |
   <a~ c'~ d'~ f'~>1 |
   <a c' d' f'>1

@@ -10,7 +10,7 @@ theChords = \chordmode {
 }
 theTreble = \relative {
   \override Score.SpacingSpanner.spacing-increment = 2
-  ef''8 d c cf bf af ef f | [g ef'] s4
+  ef''8 d c cf bf af ef f | g[ ef'] s4
   \bar "||"
 }
 
