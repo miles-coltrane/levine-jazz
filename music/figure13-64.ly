@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Mirror, Mirror, Chick Corea
+theTempo = 145
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {

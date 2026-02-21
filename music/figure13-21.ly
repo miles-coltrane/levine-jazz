@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Ready Rudy, Duke Pearson, Sweet Honey Bee
+theTempo = 150
 theKey = f
 theSignature = 4/4
 theChords = \chordmode {

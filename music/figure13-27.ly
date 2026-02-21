@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% I Hear A Rhapsody
+theTempo = 140
 theKey = ef
 theSignature = 4/4
 theChords = \chordmode {

@@ -1,12 +1,12 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Stella By Starlight, Victor Young
 theTempo = 120
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
-  % TODO: sort display of last chord
-  r4 | f1:min7 ~ bf1:7.9- | e1:maj7.4+
+  r4 | f1:min7 ~ bf1:7.9- | e1:maj7.11+
 }
 theTreble = {
   \override Score.SpacingSpanner.spacing-increment = 2.5

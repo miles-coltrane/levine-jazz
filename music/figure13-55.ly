@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Theme For Ernie, Fred Lacy
 theTempo = 120
 theKey = c
 theSignature = 4/4

@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Our Delight, Sonny Stitt, 12!
 theTempo = 120
 theKey = c
 theSignature = 4/4

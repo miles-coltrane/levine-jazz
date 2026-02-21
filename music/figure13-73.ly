@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Nica's Dream, Art Blakey, The Original Jazz Messengers
 theTempo = 120
 theKey = c
 theSignature = 4/4

@@ -1,6 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Blue Bossa, Kenny Dorham
+theTempo = 160
 theTempo = 120
 theKey = c
 theSignature = 4/4

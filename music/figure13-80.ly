@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% All The Things You Are, Jerome Kern
+theTempo = 150
 theKey = af
 theSignature = 4/4
 theChords = \chordmode {

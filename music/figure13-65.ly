@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Spring Is Here, John Coltrane, The Stardust Session
+theTempo = 215
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

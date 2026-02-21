@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% I Thought About You, Jimmy Van Heusen
+theTempo = 100
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
