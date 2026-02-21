@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% I've Got Rhythm, George Gershwin
+theTempo = 180
 theKey = bf
 theSignature = 4/4
 theChords = \chordmode {

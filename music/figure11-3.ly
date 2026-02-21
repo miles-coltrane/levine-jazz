@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% I've Got Rhythm, George Gershwin
+theTempo = 180
 theKey = bf
 theSignature = 4/4
 % TODO: all of the :alt chords have a :7.9- alternative spelling shown
