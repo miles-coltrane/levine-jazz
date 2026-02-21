@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% African Queen, Horace Silver, The Cape Verdean Blues
+theTempo = 100
 theKey = ef
 theSignature = 4/4
 theChords = \chordmode {}

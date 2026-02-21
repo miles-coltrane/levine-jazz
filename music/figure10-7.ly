@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Gary's Notebook, Lee Morgan, The Sidewinder
+theTempo = 180
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {

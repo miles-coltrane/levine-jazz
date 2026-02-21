@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Hub Tones, Freddie Hubbard, Hub Tones
+theTempo = 130
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {}

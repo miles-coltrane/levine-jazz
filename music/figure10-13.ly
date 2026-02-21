@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Blue Train, John Coltrane, Blue Train
+theTempo = 150
 theKey = gf
 theSignature = 4/4
 theChords = \chordmode {

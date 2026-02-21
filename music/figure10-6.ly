@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 160
+% All Blues, Miles Davis, Kind of Blue
+theTempo = 140
 theKey = c
 theSignature = 3/4
 theChords = \chordmode {
