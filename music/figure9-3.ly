@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Three Little Words, Art Tatum, Gene Norman Presents Vol I
+theTempo = 225
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

@@ -2,7 +2,8 @@
 \include "include/prologue.ly"
 \include "include/slash.ly"
 
-theTempo = 120
+% Giant Steps, John Coltrane, Giant Steps
+theTempo = 280
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

@@ -1,7 +1,8 @@
-\\version "2.24.4"
+\version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Sonnymoon For Two, Sonny Rollins, A Night At The Village Vanguard
+theTempo = 155
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

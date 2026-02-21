@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Child's Dance, Art Blakey's Jazz Messengers
+theTempo = 160
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
