@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Summertime, Freddie Hubbard, The Artistry of Freddie Hubbard
+theTempo = 130
 theKey = c
 theSignature = 6/8
 theChords = \chordmode {

@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Just Friends, John Klenner
 theTempo = 140
 theKey = c
 theSignature = 4/4

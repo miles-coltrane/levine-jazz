@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 140
+% My Foolish Heart, Victor Young
+theTempo = 100
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Witchcraft, Cy Coleman
 theTempo = 140
 theKey = c
 theSignature = 4/4

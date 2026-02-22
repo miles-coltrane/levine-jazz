@@ -1,6 +1,7 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
+% Witchcraft, Kenny Barron, Maybeck Recital Hall Series
 theTempo = 140
 theKey = c
 theSignature = 4/4

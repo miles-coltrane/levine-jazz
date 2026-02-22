@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% Star Eyes, Gene DePaul
+theTempo = 150
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

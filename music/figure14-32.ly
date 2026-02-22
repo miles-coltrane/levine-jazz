@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 120
+% I'm Gettin' Sentimental Over You, Kenny Barron, Live At Maybeck Recital Hall
+theTempo = 160
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {

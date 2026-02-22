@@ -1,7 +1,8 @@
 \version "2.24.4"
 \include "include/prologue.ly"
 
-theTempo = 140
+% Upper Manhattan Medical Group, Joe Henderson, Lush Life
+theTempo = 215
 theKey = c
 theSignature = 4/4
 theChords = \chordmode {
